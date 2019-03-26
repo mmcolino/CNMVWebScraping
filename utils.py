@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-********************
 import zipfile
+import csv
 import time
 import os
 
@@ -55,6 +56,6 @@ class Utils:
     # Vuelca un array de dos dimensiones a fichero csv
     def write2DArrayToCsv(self, twoDimensionArray, file_csv_path, delimiter):
         with open(file_csv_path,"w+") as my_csv:
-            csvWriter = csv.writer(file_csv_path,delimiter=delimiter)
+            csvWriter = csv.writer(my_csv,delimiter=delimiter)
             csvWriter.writerows(twoDimensionArray)
     
