@@ -12,6 +12,7 @@ import os
 # Inicializar la clase que implementa las operaciones de web scraper
 wsPreferences = {'selenium_firefox_path' : 'C:/Program Files/Mozilla Firefox/Firefox.exe',
                  'selenium_firefox_driver' : 'C:/Users/Marimar/Anaconda3/Lib/site-packages/selenium/webdriver/geckodriver-v0.24.0-win64/geckodriver.exe',
+                 'xbrl_ipp_url': 'http://www.cnmv.es/ipps',
                  'xbrl_download_dir' : 'F:\CNMV-IPPWebScraping\data\download',
                  'xbrl_extract_dir' : 'F:/CNMV-IPPWebScraping/data/ipp-xbrl',
                  'xbrl_download_time_to_wait' : 5,
@@ -22,7 +23,7 @@ webScraper = WebScraper(wsPreferences)
 utils = Utils()
 
 # Configuración de los datos a ser descargados
-sectorDictionary = {'S1_1':'PETROLEO', 'S1_2': 'ENERGÍA Y AGUA'}
+sectorDictionary = {'S1_2': 'ENERGÍA Y AGUA'}
 #sectorDictionary = {'S1_1':'PETROLEO', 'S1_2': 'ENERGÍA Y AGUA', 'S1_3': 'MINERIA', 'S1_4': 'QUÍMICAS', 'S1_5': 'TEXTIL Y PAPELERAS', 'S1_6' : 'COMERCIO'}
 periods = [2018]
 
@@ -39,7 +40,7 @@ for key, value in sectorDictionary.items():
             print('---- Loaded sector: '+sectorDictionary[key]+' period: '+str(period))
             csvfileName = str(period)+'_'+sectorDictionary[key]+'.csv'
             csvFilePath = csv_data_dir+'/'+csvfileName
-            utils.write2DArrayToCsv(twoDimensionArray=result, file_csv_path=csvFilePath, delimiter=',')
+            utils.write2DArrayToCsv(twoDimensionArray=result, file_csv_path=csvFilePath, delimiter=';')
                        
 
 xbrlParser = XbrlParser('F:/CNMV-IPPWebScraping/data/ipp-xbrl/2018088106.xbrl')
