@@ -11,8 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 
 from utils import Utils
-
-import sys
+import traceback
 import os
 
 # Inicializar elementos requeridos
@@ -59,18 +58,22 @@ class WebScraper():
                         Número de veces a esperar por la desaparición del fichero <download_file>.part
                 
         """
-        # Configuración web driver
-        self.selenium_firefox_path = wsPreferences['selenium_firefox_path']
-        self.selenium_firefox_driver = wsPreferences['selenium_firefox_driver']
-        # Configuración del origen de datos
-        self.xbrl_ipp_url = wsPreferences['xbrl_ipp_url']
-        # Configuración persistencia descarga de ficheros IPP xbrl
-        self.xbrl_download_dir = wsPreferences['xbrl_download_dir']
-        self.xbrl_extract_dir = wsPreferences['xbrl_extract_dir']
-        # Configuración tiempos de espera por descarga de ficheros xbrl
-        self.xbrl_download_time_to_wait = wsPreferences['xbrl_download_time_to_wait']
-        self.xbrl_download_count_until_filepart_cre = wsPreferences['xbrl_download_count_until_filepart_cre']
-        self.xbrl_download_count_until_filepart_del = wsPreferences['xbrl_download_count_until_filepart_del']
+        try:
+            # Configuración web driver
+            self.selenium_firefox_path = wsPreferences['selenium_firefox_path']
+            self.selenium_firefox_driver = wsPreferences['selenium_firefox_driver']
+            # Configuración del origen de datos
+            self.xbrl_ipp_url = wsPreferences['xbrl_ipp_url']
+            # Configuración persistencia descarga de ficheros IPP xbrl
+            self.xbrl_download_dir = wsPreferences['xbrl_download_dir']
+            self.xbrl_extract_dir = wsPreferences['xbrl_extract_dir']
+            # Configuración tiempos de espera por descarga de ficheros xbrl
+            self.xbrl_download_time_to_wait = wsPreferences['xbrl_download_time_to_wait']
+            self.xbrl_download_count_until_filepart_cre = wsPreferences['xbrl_download_count_until_filepart_cre']
+            self.xbrl_download_count_until_filepart_del = wsPreferences['xbrl_download_count_until_filepart_del']
+        except Exception:
+            traceback.print_exc()          
+            raise Exception('Error WebScrapper.__init__.')  
 
     def load_sector_data(self, sectorDictionary, sectorId, period):
         """ Realiza la carga de los informes IPP xbrl para el sector identificado y el periodo identificado
@@ -105,9 +108,8 @@ class WebScraper():
 
             # Procesa el resultado obtenido tras la búsqueda y recuperación de datos
             result = self.__process_result(sectorId, sectorDictionary);
-        except Exception as e:
-            # Mostramos este mensaje en caso de que se presente algún problema
-            print("Unexpected error:", +str(e))
+        except Exception:
+            traceback.print_exc()
             result = False
         finally:
             # Se finaliza el driver inicializado
@@ -137,7 +139,8 @@ class WebScraper():
             else:
                 print('"  * Warning, file Not Found: '+path_to_zip_file);
                 return False
-        except Exception as e:
+        except Exception:
+            traceback.print_exc()          
             raise Exception('Error WebScrapper.__decompress_ipp_xbrl_data.')           
 
     def __process_result(self, sectorId, sectorDictionary):
@@ -171,7 +174,8 @@ class WebScraper():
             
             print('  * Result processed')
             return result
-        except Exception as e:
+        except Exception:
+            traceback.print_exc()            
             raise Exception('Error en WebScraper.__load_page.')
 
     def __process_result_table_data(self, result_data, sectorId, sectorDictionary):
@@ -193,8 +197,6 @@ class WebScraper():
             # - cada fila se corresponde con una fila de la tabla
             # - cada columnna, con un campo de la fila de la tabla
             data = []
-            # Inicializamos el objeto con la fila de cabecera de datos
-            data.append(['Sector', 'Entidad', 'Ejercicio', 'Periodo', 'NombreXBRL', 'Tamaño(KB)', 'Path'])
 
             # recupera las filas de la tabla
             rows = result_data.find_elements(By.TAG_NAME, "tr")
@@ -236,8 +238,8 @@ class WebScraper():
                 if(len(rowdata) > 1):
                     data.append(rowdata)
             return data      
-        except Exception as e:
-            print('Error en __process_result_data')
+        except Exception:
+            traceback.print_exc()            
             raise Exception('Error WebScrapper.__process_result_data.')          
 
     def __retrieve_data(self, sectorId, period):
@@ -272,7 +274,8 @@ class WebScraper():
             searchButtom.click()
             
             print('  * Searched data')
-        except Exception as e:
+        except Exception:
+            traceback.print_exc()            
             raise Exception('Error en WebScraper.__load_page.')
 
     def __get_elment_byid(self, elementId, timeToWait, modeError = 'raise'):
@@ -282,7 +285,9 @@ class WebScraper():
         elementId: str, mandatory
             Identifiador del elemento a recuperar
         timeToWait: int, mandatory
-            Tiempo que ha de esperarse por la presencia del elemento en la página             
+            Tiempo que ha de esperarse por la presencia del elemento en la página
+        modeError: str, mandatory
+            Determina si en caso de producirse una excepción ha de ser elevada o no
         """
         try:
             # Si procede, se espera el tiempo establecido por la presencia del elemento
@@ -291,7 +296,8 @@ class WebScraper():
             #Obtenemos el elemento solicitado
             element = self.driver.find_element_by_id(elementId)
             return element
-        except Exception as e:
+        except Exception:
+            traceback.print_exc()
             if(modeError == 'raise'):
                 raise Exception('Error WebScrapper.__get_elment_byid.')
             return False
@@ -307,6 +313,7 @@ class WebScraper():
             self.driver.get(url)
             print('  * Pagina soliciada: http://www.cnmv.es/ipps')
         except Exception as e:
+            print(e)            
             raise Exception('Error en WebScraper.__load_page.')
             
     def __init_webdriver(self):
@@ -330,5 +337,6 @@ class WebScraper():
             # Instanciar driver par Firefox
             self.driver = webdriver.Firefox(firefox_profile=profile, firefox_binary=binary, executable_path=self.selenium_firefox_driver)
             print('  * Web driver inicializado')
-        except Exception as e:
-            raise Exception('Error en WebScraper.__init_webdriver.')
+        except Exception:
+            traceback.print_exc()            
+            raise Exception('Error en WebScraper.__init_webdriver.')      

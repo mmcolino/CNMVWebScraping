@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-********************
 from bs4 import BeautifulSoup
 
+import traceback
 
 class XbrlParser:
     """
@@ -24,12 +25,13 @@ class XbrlParser:
             self.xbrl_string = open(xbrlPath, encoding='utf-8').read()
             # Inializar el contenedor BeautifulSoup
             self.soup = BeautifulSoup(self.xbrl_string, "lxml-xml")
-        except Exception as e:
-            raise Exception('Error inicializando XbrlParser.')
+        except Exception:
+            traceback.print_exc()
+            raise Exception('Error en XbrlParser.__init__')
             
 
     def get(self,tag_name, contextRef):
-        """Recupera el/los elemento/s cuyo nombre de tag y contexto coincidan con los suministrados
+        """Recupera el elemento cuyo nombre de tag y contexto coincidan con los suministrados
            como parámetro.
         Parameters
         ----------
@@ -38,8 +40,14 @@ class XbrlParser:
         contextRef: str, mandatory
             Nombre de contexto al que ha de pertenecer el/los elementos a recuperar
         """
-        # recupera el conjunto completo de elementos
-        tag_list = self.soup.find_all()
-        for tag in tag_list:
-            if(tag.name == tag_name and tag['contextRef'] == contextRef):
-                print(tag.text)
+        try:
+            # recupera el conjunto completo de elementos
+            tag_list = self.soup.find_all()
+            for tag in tag_list:
+                if(tag.name == tag_name and tag['contextRef'] == contextRef):
+                    value = tag.text
+                    print(value)
+                    return value
+        except Exception:
+            traceback.print_exc()
+            raise Exception('Error en XbrlParser.get')               
