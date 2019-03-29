@@ -78,17 +78,14 @@ Además, serán realizar el ajuste de la configuración de la aplicación de scr
     * *xbrl\_download\_dir*: Configuración ubicación donde se ha de realizar la descarga de los ficheros zip que contienen los ficheros XBRL para una página de resultados.
     * *xbrl\_extract\_dir*: Configuración directorio donde se descombrimirán y ubicarán los ficheros xbrl resultantes de la descompresión del zip previo.
 
-- **Configuración tiempos de espera por descarga de ficheros xbrl** 
+- **Configuración tiempos de espera por descarga de ficheros xbrl**     
+    Se requerirá configurar una serie de parámetros para parametrizar el comportamiento de la función de espera hasta que una determinada descarga de fichero ha sido realizada.
 
-Se requerirá configurar una serie de parámetros para parametrizar el comportamiento de la función de espera hasta que una determinada descarga de fichero ha sido realizada.
     * *xbrl\_download\_time\_to\_wait*: Tiempo a esperar entre verificaciones de la existencia de el fichero <download_file>.part
     * *xbrl\_download\_count\_until\_filepart\_cre*: Número de veces a esperar por la aparicicón del fichero <download_file>.part
     * *xbrl\_download\_count\_until\_filepart\_del*: Número de veces a esperar por la desaparición del fichero <download_file>.part
     
-    Como máximo se esperará: 
-```
-xbrl_download_time_to_wait * xbrl_download_count_until_filepart_cre * xbrl_download_count_until_filepart_del
-```
+    Como máximo se esperará: *xbrl\_download\_time\_to\_wait x xbrl\_download\_count\_until\_filepart\_cre x xbrl\_download\_count\_until\_filepart\_del*
 
 - **Configuración ámbito scraping**:
     * *sectorDictionary*: configuración de sectores empresariales para los que descargar datos
