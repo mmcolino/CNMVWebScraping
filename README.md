@@ -3,12 +3,14 @@
 ## Descripción
 
 El contenido de este respositorio se corresponde con el resultado de la elaboración de la Práctica 1 de la asignatura Tipología y ciclo de vida de los datos, enmarcada dentro del máster en Data Science de la Universitat Oberta de Catalunya.
+
 En la ejecución de esta práctica se han aplicado técnicas de web scraping haciendo uso del lenguaje de programación Python, con el objetivo de extraer información relativa a los estados financieros estandarizados de caracter público.
+
 Estos estados financieros están disponibles en la web de la [CNMV](http://www.cnmv.es/ipps/), haremos uso de la versión de datos suministrada en formato estandarizado [XBRL](https://xbrl.es/wp/).
 
 ## Miembros del equipo
 
-Esta práctica ha sido elaborada de forma individual por María del Mar Colino García.
+Esta práctica ha sido elaborada de forma individual por **María del Mar Colino García**.
 
 ## Ficheros
 
@@ -83,11 +85,13 @@ Además, serán realizar el ajuste de la configuración de la aplicación de scr
     * *xbrl\_extract\_dir*: Configuración directorio donde se descombrimirán y ubicarán los ficheros xbrl resultantes de la descompresión del zip previo.
 
 - **Configuración tiempos de espera por descarga de ficheros xbrl** 
+
 Se requerirá configurar una serie de parámetros para parametrizar el comportamiento de la función de espera hasta que una determinada descarga de fichero ha sido realizada.
     Como máximo se esperará: 
 ```
 xbrl_download_time_to_wait * xbrl_download_count_until_filepart_cre * xbrl_download_count_until_filepart_del
 ```
+
     * *xbrl\_download\_time\_to\_wait*: Tiempo a esperar entre verificaciones de la existencia de el fichero <download_file>.part
     * *xbrl\_download\_count\_until\_filepart\_cre*: Número de veces a esperar por la aparicicón del fichero <download_file>.part
     * *xbrl\_download\_count\_until\_filepart\_del*: Número de veces a esperar por la desaparición del fichero <download_file>.part
@@ -96,7 +100,7 @@ xbrl_download_time_to_wait * xbrl_download_count_until_filepart_cre * xbrl_downl
     * *sectorDictionary*: configuración de sectores empresariales para los que descargar datos
     * *periods*: configuración de periodos para los que descargar datos
 
-- **Configuración de la extracción de datos** ([IPP Taxonomy](https://www.xbrl.es/informacion/ipp.html))
+- **Configuración de la extracción de datos** (ver info para configuración en [IPP Taxonomy](https://www.xbrl.es/informacion/ipp.html))
     * *xbrlPropertiesList*: lista de propiedades xbrl
     * *xbrlContext*: constexto asociado a las propiedades a ser extraidas
     
