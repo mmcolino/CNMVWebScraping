@@ -85,7 +85,8 @@ Además, serán realizar el ajuste de la configuración de la aplicación de scr
     * *xbrl\_download\_count\_until\_filepart\_cre*: Número de veces a esperar por la aparicicón del fichero <download_file>.part
     * *xbrl\_download\_count\_until\_filepart\_del*: Número de veces a esperar por la desaparición del fichero <download_file>.part
     
-    Como máximo se esperará: *xbrl\_download\_time\_to\_wait x xbrl\_download\_count\_until\_filepart\_cre x xbrl\_download\_count\_until\_filepart\_del*
+    Como máximo se esperará:     
+    *xbrl\_download\_time\_to\_wait \* xbrl\_download\_count\_until\_filepart\_cre \* xbrl\_download\_count\_until\_filepart\_del*
 
 - **Configuración ámbito scraping**:
     * *sectorDictionary*: configuración de sectores empresariales para los que descargar datos
