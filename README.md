@@ -18,20 +18,14 @@ El presente repositorio define la siguiente estructura de directorios y ficheros
 
 - **src**: Contenedor código fuente de la aplicación
     * *main.py*: Punto de entrada a la aplicación, en este fichero se realiza la configuración del proceso de scraping y se inicial el proceso.
-
     * *scraper_orchestrator.py*: Clase que implementa la orquestación de las tareas de Web Scraping, extracción de los datos y generación de datasets.
-
     * *web_scraper.py*: Clase que implementa la funcionalidad de scraping para los informes IPP publicados en la CNMV
-
     * *xbrl_parser.py*: Clase que implementa la funcionalidad de parseado de ficheros XBRL
-
     * *utils.py*: Clase que implementa funciones de utilidad
 
 - **data**: Contenedor datos extraidos. Define la siguiente estructura de directorios:
     * *download*: Ubicación donde serán descargados los ficheros zip con paquetes de informes xbrl.
-
     * *ipp-xbrl*: Ubicación donde se persistirán los ficheros xbrl.
-
     * *csv*: Ubicación donde se persistirán los datasets generados:
         - *indexIPPXbrlReports.csv*: Dataset con los datos generales y de indexación de los ficheros xbrl descargados
         - *propertiesIPPXbrl.csv*: Dataset con los datos extraidos de los xbrl.
@@ -87,14 +81,14 @@ Además, serán realizar el ajuste de la configuración de la aplicación de scr
 - **Configuración tiempos de espera por descarga de ficheros xbrl** 
 
 Se requerirá configurar una serie de parámetros para parametrizar el comportamiento de la función de espera hasta que una determinada descarga de fichero ha sido realizada.
+    * *xbrl\_download\_time\_to\_wait*: Tiempo a esperar entre verificaciones de la existencia de el fichero <download_file>.part
+    * *xbrl\_download\_count\_until\_filepart\_cre*: Número de veces a esperar por la aparicicón del fichero <download_file>.part
+    * *xbrl\_download\_count\_until\_filepart\_del*: Número de veces a esperar por la desaparición del fichero <download_file>.part
+    
     Como máximo se esperará: 
 ```
 xbrl_download_time_to_wait * xbrl_download_count_until_filepart_cre * xbrl_download_count_until_filepart_del
 ```
-
-    * *xbrl\_download\_time\_to\_wait*: Tiempo a esperar entre verificaciones de la existencia de el fichero <download_file>.part
-    * *xbrl\_download\_count\_until\_filepart\_cre*: Número de veces a esperar por la aparicicón del fichero <download_file>.part
-    * *xbrl\_download\_count\_until\_filepart\_del*: Número de veces a esperar por la desaparición del fichero <download_file>.part
 
 - **Configuración ámbito scraping**:
     * *sectorDictionary*: configuración de sectores empresariales para los que descargar datos
