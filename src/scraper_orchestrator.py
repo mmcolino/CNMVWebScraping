@@ -157,6 +157,6 @@ class ScraperOrchestrator():
     
     def __get_propertiesIPPXbrlPath(self):
         """ Retorna el path del fichero de salida con el dataset de propiedades xbrl extraidos"""
-        csvfileName = 'propertiesIPPXbrl.csv'
+        csvfileName = 'statementsIPPXbrlReports.csv'
         pathIndexReports = self.csv_data_dir+'/'+csvfileName   
         return pathIndexReports    

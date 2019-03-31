@@ -6,8 +6,8 @@ import traceback
 # - Conjunto de sectores para los que nos interesa realizar la descarga de datos
 #   (Se ha decidido establecer este dato por configuraicón, en lugar de hacer scraping del mismo con el objetivo de 
 #    disponer de la flexibilidad necesaria para poder configurar los sectores para los que interesa cargar datos)
-#sectorDictionary = {'S1_2': 'ENERGÍA Y AGUA','S1_3': 'MINERIA',}
-sectorDictionary = {'S1_1':'PETROLEO', 
+sectorDictionary = {'S1_2': 'ENERGÍA Y AGUA'}
+"""sectorDictionary = {'S1_1':'PETROLEO', 
                     'S1_2': 'ENERGÍA Y AGUA', 
                     'S1_3': 'MINERIA', 
                     'S1_4': 'QUÍMICAS', 
@@ -25,7 +25,7 @@ sectorDictionary = {'S1_1':'PETROLEO',
                     'S2_3': 'SEGUROS Y OTRAS INTERMEDIACIONES FINANCIERAS',
                     'S3_1': 'ESTADO',
                     'S3_2': 'OTROS ORGANISMOS PUBLICOS'
-                    }
+                    }"""
 # - Periodos financieros a contemplar (años)
 periods = [2018]
 
@@ -46,7 +46,7 @@ try:
                      'xbrl_extract_dir' : 'F:\CNMV-IPPWebScraping\data\ipp-xbrl',
                      'xbrl_download_time_to_wait' : 5,
                      'xbrl_download_count_until_filepart_cre' : 15,
-                     'xbrl_download_count_until_filepart_del' : 10 }
+                     'xbrl_download_count_until_filepart_del' : 15 }
     # - Directorio contenedor de los datos que van a ser extraidos y formateados en formato csv
     csv_data_dir = 'F:\CNMV-IPPWebScraping\data\csv'
     

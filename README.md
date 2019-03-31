@@ -4,9 +4,9 @@
 
 El contenido de este respositorio se corresponde con el resultado de la elaboración de la Práctica 1 de la asignatura Tipología y ciclo de vida de los datos, enmarcada dentro del máster en Data Science de la Universitat Oberta de Catalunya.
 
-En la ejecución de esta práctica se han aplicado técnicas de web scraping haciendo uso del lenguaje de programación Python, con el objetivo de extraer información relativa a los estados financieros estandarizados de caracter público.
+En la ejecución de esta práctica se han aplicado técnicas de web scraping haciendo uso del lenguaje de programación Python, con el objetivo de extraer información relativa a estados financieros estandarizados de caracter público.
 
-Estos estados financieros están disponibles en la web de la [CNMV](http://www.cnmv.es/ipps/), haremos uso de la versión de datos suministrada en formato estandarizado [XBRL](https://xbrl.es/wp/).
+El ámbito de la información objeto del alcance de esta práctica, son los estados financieros disponibles en la web de la Comision Nacional del Mercado de Valores [CNMV](http://www.cnmv.es/ipps/), centrándonos en el uso de la versión de datos suministrada en formato estandarizado [XBRL](https://xbrl.es/wp/).
 
 ## Miembros del equipo
 
@@ -28,9 +28,9 @@ El presente repositorio define la siguiente estructura de directorios y ficheros
     * *ipp-xbrl*: Ubicación donde se persistirán los ficheros xbrl.
     * *csv*: Ubicación donde se persistirán los datasets generados:
         - *indexIPPXbrlReports.csv*: Dataset con los datos generales y de indexación de los ficheros xbrl descargados
-        - *propertiesIPPXbrl.csv*: Dataset con los datos extraidos de los xbrl.
+        - *statementsIPPXbrlReports.csv*: Dataset con los datos extraidos de los xbrl.
 
-- **pdf**: Contenedor documento con el enunciado de la práctica y respuetas a las cuestiones planteadas.
+- **doc**: Contenedor documento con el enunciado de la práctica y respuestas a las cuestiones planteadas.
 
 ## Consideraciones generales
 
@@ -67,7 +67,7 @@ pip install beautifulsoup4
 
 Como puede observarse, se hace uso de selenium dado que la página principal de descarga suministrada por la [CNMV](http://www.cnmv.es/ipps/) tiene un alto grado de carga dinámica, esta librería por lo tanto, simplificará mucho la solución. 
 
-Además, serán realizar el ajuste de la configuración de la aplicación de scraping previa a su ejecución:
+Además, previo a su ejecución, se deberá revisar y ajustar la configuración de la aplicación de scraping:
 
 - **Configuración web driver**
     - *selenium\_firefox\_path*: Configurarion para el driver firefox, indica la ruta al ejecutable de Firefox

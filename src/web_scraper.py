@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+from selenium.common.exceptions import TimeoutException
 
 from utils import Utils
 import traceback
@@ -202,6 +203,9 @@ class WebScraper():
         """
         try:
             # --- Tratamos el resultado
+            # Resetea el el directorio de descarga, para asegurarse un procesado limpio
+            # y evitar mezclas con datos que pudieron quedarse sin procesar en alguna descarga previa
+            self.__reset_download_dir()
             # Realizamos la descarga de ficheros XBRL corresondientes a los informes IPP
             downloadXbrlButtom = self.__get_elment_byid("wDescargas_Listado_btnDescargar", 5, modeError='noRaise')
             if(downloadXbrlButtom != False):
@@ -212,6 +216,17 @@ class WebScraper():
                     result_data = self.__get_elment_byid("wDescargas_Listado_gridInformes", 5) 
                     data = self.__process_result_table_data(result_data, sectorId, sectorDictionary)
                     result = data
+                   
+                    # Recuperamos la lista de páginas (en caso de que exista más de una página de
+                    # resultado)
+                    pages = self.driver.find_elements_by_xpath(".//a[contains(@href,'Page')]") 
+                    # Para cada páginad de resultados adicional                    
+                    for page in pages:
+                        print("   * Process page: "+page.text)
+                        page.click()
+                        result_data = self.__get_elment_byid("wDescargas_Listado_gridInformes", 5)  
+                        data = self.__process_result_table_data(result_data, sectorId, sectorDictionary)
+                        result = result + data
                 else:
                     # si no se ha logrado descargar y descomprimir los ficheros xbrl se retorna
                     # False indicando que la extracción de los datos del sector y periodo no ha
@@ -232,7 +247,7 @@ class WebScraper():
         """
         try:
             # definir ruta a fichero zip de informes IPP xbrl a ser extraídos
-            path_to_zip_file = self.xbrl_download_dir + '\Informes.zip'
+            path_to_zip_file = self.__get_ReportsZipPath()
             # esperar hasta que se haya finalizado la descarga
             fileIsDownloaded = utils.wait_until_file_is_download(path_to_zip_file, 
                                                                  self.xbrl_download_time_to_wait, 
@@ -335,9 +350,25 @@ class WebScraper():
             #Obtenemos el elemento solicitado
             element = self.driver.find_element_by_id(elementId)
             return element
+        except TimeoutException:
+            return False
         except Exception:
             traceback.print_exc()
             if(modeError == 'raise'):
                 raise Exception('Error WebScrapper.__get_elment_byid.')
             return False
+ 
+    def __reset_download_dir(self):
+        """ Resetea el el directorio de descarga, para asegurarse un procesado limpio
+            y evitar mezclas con datos que pudieron quedarse sin procesar en alguna descarga previa"""
+        try:
+            utils.deleteIfExist(self.__get_ReportsZipPath())
+            utils.deleteIfExist(self.__get_ReportsZipPath()+'.part')             
+        except Exception:
+            traceback.print_exc()            
+            raise Exception('Error WebScrapper.__reset_download_dir.')             
     
+    def __get_ReportsZipPath(self):
+        """ Retorna el path del fichero con el zip de los Informes descargados"""
+        path_to_zip_file = self.xbrl_download_dir + '\Informes.zip'
+        return path_to_zip_file

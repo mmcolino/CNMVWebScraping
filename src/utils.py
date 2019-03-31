@@ -66,6 +66,7 @@ class Utils:
             
             # se realiza un bucle esperando hasta que el fichero .part desaparezca
             print("  * Waiting for deleting file: "+file_part_path) 
+            counter = 0
             while os.path.exists(file_part_path):
                 sys.stdout.write('.')
                 time.sleep(time_to_wait)
@@ -112,10 +113,14 @@ class Utils:
             Delimitador a usar entre los campos de cada fila            
         """
         try:
-            f = open(file_csv_path, 'a')
+            """f = open(file_csv_path, 'a')
             for item in twoDimensionArray:
                 f.write(delimiter.join([str(x) for x in item]) + '\n')
-            f.close()            
+            f.close()"""
+            with open(file_csv_path, 'a', newline='') as csvfile:
+                csvWriter = csv.writer(csvfile, delimiter=';',
+                                        quoting=csv.QUOTE_NONNUMERIC)
+                csvWriter.writerows(twoDimensionArray)
         except Exception:
             traceback.print_exc()
             raise Exception('Error en Utils.write2DArrayToCsv')            
