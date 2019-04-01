@@ -113,13 +113,9 @@ class Utils:
             Delimitador a usar entre los campos de cada fila            
         """
         try:
-            """f = open(file_csv_path, 'a')
-            for item in twoDimensionArray:
-                f.write(delimiter.join([str(x) for x in item]) + '\n')
-            f.close()"""
             with open(file_csv_path, 'a', newline='') as csvfile:
                 csvWriter = csv.writer(csvfile, delimiter=';',
-                                        quoting=csv.QUOTE_NONNUMERIC)
+                                        quoting=csv.QUOTE_MINIMAL)
                 csvWriter.writerows(twoDimensionArray)
         except Exception:
             traceback.print_exc()

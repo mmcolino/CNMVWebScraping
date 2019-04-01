@@ -1,0 +1,2210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--VerFW:1.0-->
+<xbrli:xbrl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xbrl.org/2006/xbrldi http://www.xbrl.org/2006/xbrldi-2006.xsd" xmlns:ipp_se="http://www.cnmv.es/xbrl/ipp/se/2019-01-01" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ipp_se_dim="http://www.cnmv.es/xbrl/ipp/se/dim/2019-01-01" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:schemaRef xlink:type="simple" xlink:href="http://www.cnmv.es/xbrl/ipp/se/2019-01-01/ipp_se_2019-01-01.xsd" />
+  <xbrli:context id="Icur">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="Icur_PersonasContactoMiembro_1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PersonasContactoEje">ipp_se_dim:PersonasContactoMiembro</xbrldi:explicitMember>
+      <xbrldi:typedMember dimension="ipp_se_dim:LineaPersonasContactoEje">
+        <ipp_se_dim:ID_LineaCuadro>1</ipp_se_dim:ID_LineaCuadro>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_PeriodoActualBalanceMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoBalanceEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_PeriodoCierreAnteriorBalanceMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoBalanceEje">ipp_se_dim:PeriodoCierreAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_PeriodoCorrienteActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-07-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:CuentaPerdidasGananciasEje">ipp_se_dim:PeriodoCorrienteActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_PeriodoCorrienteAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-07-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:CuentaPerdidasGananciasEje">ipp_se_dim:PeriodoCorrienteAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_AcumuladoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:CuentaPerdidasGananciasEje">ipp_se_dim:AcumuladoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_AcumuladoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:CuentaPerdidasGananciasEje">ipp_se_dim:AcumuladoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="Dcur_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_CapitalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:CapitalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_PrimaEmisionReservasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:PrimaEmisionReservasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:AccionesParticipacionesPatrimonioPropiasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_ResultadoPeriodoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:ResultadoPeriodoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_OtrosInstrumentosPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:OtrosInstrumentosPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_AjustesPorCambiosValorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:AjustesPorCambiosValorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:SubvencionesDonacionesLegadosRecibidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Individual_TotalPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:TotalPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_CapitalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:CapitalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_PrimaEmisionReservasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:PrimaEmisionReservasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:AccionesParticipacionesPatrimonioPropiasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_ResultadoPeriodoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:ResultadoPeriodoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_OtrosInstrumentosPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:OtrosInstrumentosPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_AjustesPorCambiosValorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:AjustesPorCambiosValorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:SubvencionesDonacionesLegadosRecibidosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Individual_TotalPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoTotalCambiosPatrimonioNetoIndividualEje">ipp_se_dim:TotalPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="Dcur_ORICPeriodoCorrienteActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-07-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:OtroResultadoIntegralConsolidadoEje">ipp_se_dim:PeriodoCorrienteActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_ORICPeriodoCorrienteAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-07-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:OtroResultadoIntegralConsolidadoEje">ipp_se_dim:PeriodoCorrienteAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_ORICPeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:OtroResultadoIntegralConsolidadoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_ORICPeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:OtroResultadoIntegralConsolidadoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_CapitalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:CapitalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_PrimaEmisionReservasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:PrimaEmisionReservasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:AccionesParticipacionesPatrimonioPropiasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:ResultadoPeriodoAtribuidoEntidadControladoraMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:OtrosInstrumentosPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_AjustesPorCambiosValorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:AjustesPorCambiosValorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_ParticipacionesNoControladorasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:ParticipacionesNoControladorasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_Consolidado_TotalPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:TotalPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_CapitalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:CapitalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_PrimaEmisionReservasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:PrimaEmisionReservasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:AccionesParticipacionesPatrimonioPropiasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:ResultadoPeriodoAtribuidoEntidadControladoraMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:OtrosInstrumentosPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_AjustesPorCambiosValorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:AjustesPorCambiosValorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:ParticipacionesNoControladorasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_Consolidado_TotalPatrimonioNetoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:EstadoCambiosPatrimonioNetoConsolidadoEje">ipp_se_dim:TotalPatrimonioNetoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_ImportePorAccionMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:ImportePorAccionMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_ImporteTotalMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:ImporteTotalMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_ImportePorAccionMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:ImportePorAccionMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_ImporteTotalMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:ImporteTotalMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_NumeroAccionesEntregarMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:NumeroAccionesEntregarMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_NumeroAccionesEntregarMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:DividendosPagadosEje">ipp_se_dim:NumeroAccionesEntregarMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_ActivosFinancierosMantenidosParaNegociarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:ActivosFinancierosMantenidosParaNegociarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_OtrosActivosFinancierosVRCambiosPYGMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:OtrosActivosFinancierosVRCambiosPYGMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:ActivosFinancierosDisponiblesParaVentaMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_PrestamosPartidasCobrarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:PrestamosPartidasCobrarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_InversionesMantenidasHastaVencimientoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:InversionesMantenidasHastaVencimientoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_PasivosFinancierosMantenidosParaNegociarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:PasivosFinancierosMantenidosParaNegociarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_OtrosPasivosFinancierosVRCambiosPyGMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:OtrosPasivosFinancierosVRCambiosPyGMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_DebitosPartidasPagarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:DebitosPartidasPagarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_ActivosFinancierosMantenidosParaNegociarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:ActivosFinancierosMantenidosParaNegociarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:OtrosActivosFinancierosVRCambiosPYGMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:ActivosFinancierosDisponiblesParaVentaMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_PrestamosPartidasCobrarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:PrestamosPartidasCobrarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_InversionesMantenidasHastaVencimientoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ActivosFinancierosEje">ipp_se_dim:InversionesMantenidasHastaVencimientoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_PasivosFinancierosMantenidosParaNegociarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:PasivosFinancierosMantenidosParaNegociarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_OtrosPasivosFinancierosVRCambiosPyGMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:OtrosPasivosFinancierosVRCambiosPyGMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_DebitosPartidasPagarMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PasivosFinancierosEje">ipp_se_dim:DebitosPartidasPagarMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_AreaGeograficaIndividualMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:AreaGeograficaEje">ipp_se_dim:AreaGeograficaIndividualMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_AreaGeograficaIndividualMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:AreaGeograficaEje">ipp_se_dim:AreaGeograficaIndividualMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:AreaGeograficaEje">ipp_se_dim:AreaGeograficaConsolidadoMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:AreaGeograficaEje">ipp_se_dim:AreaGeograficaConsolidadoMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_SegmentoslMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:SegmentosEje">ipp_se_dim:SegmentoslMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_IngresosOrdinariosPeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:SegmentosEje">ipp_se_dim:IngresosOrdinariosPeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_IngresosOrdinariosPeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:SegmentosEje">ipp_se_dim:IngresosOrdinariosPeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_ResultadoPeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:SegmentosEje">ipp_se_dim:ResultadoPeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_ResultadoPeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:SegmentosEje">ipp_se_dim:ResultadoPeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_IndividualMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:IndividualMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_IndividualMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:IndividualMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_ConsolidadoMiembro_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:ConsolidadoMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Ipre_ConsolidadoMiembro_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2017-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:ConsolidadoMiembro</xbrldi:explicitMember>
+      <xbrldi:explicitMember dimension="ipp_se_dim:PeriodoEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_Importe_PeriodoActualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ImporteMilesEurosEje">ipp_se_dim:PeriodoActualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_Importe_PeriodoAnteriorMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ImporteMilesEurosEje">ipp_se_dim:PeriodoAnteriorMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_AccionistasSignificativosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:AccionistasSignificativosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_AdministradoresDirectivosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:AdministradoresDirectivosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_PersonasSociedadesEntidadesGrupoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:PersonasSociedadesEntidadesGrupoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_OtrasPartesVinculadasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:OtrasPartesVinculadasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dcur_TotalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2018-01-01</xbrli:startDate>
+      <xbrli:endDate>2018-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:TotalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_AccionistasSignificativosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:AccionistasSignificativosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_AdministradoresDirectivosMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:AdministradoresDirectivosMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_PersonasSociedadesEntidadesGrupoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:PersonasSociedadesEntidadesGrupoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_OtrasPartesVinculadasMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:OtrasPartesVinculadasMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre_TotalMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:TransaccionesPartesVinculadasEje">ipp_se_dim:TotalMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Dpre">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2017-01-01</xbrli:startDate>
+      <xbrli:endDate>2017-12-31</xbrli:endDate>
+    </xbrli:period>
+  </xbrli:context>
+  <xbrli:context id="Icur_IndividualMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:IndividualMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="Icur_ConsolidadoMiembro">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.cnmv.es/xbrl/ipp/A-08168064">GRUPO CATALANA OCCIDENTE, S.A.</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2018-12-31</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="ipp_se_dim:ApartadoEje">ipp_se_dim:ConsolidadoMiembro</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:unit id="euro">
+    <xbrli:measure>iso4217:EUR</xbrli:measure>
+  </xbrli:unit>
+  <!--Periodo E2-->
+  <ipp_se:Modelo contextRef="Icur">SEG</ipp_se:Modelo>
+  <ipp_se:Version contextRef="Icur">8.0.0</ipp_se:Version>
+  <ipp_se:Estadistico contextRef="Icur">S</ipp_se:Estadistico>
+  <ipp_se:FechaInicioInforme contextRef="Icur">2018-01-01</ipp_se:FechaInicioInforme>
+  <ipp_se:FechaFinInforme contextRef="Icur">2018-12-31</ipp_se:FechaFinInforme>
+  <ipp_se:DenominacionSocial contextRef="Icur">GRUPO CATALANA OCCIDENTE, S.A.</ipp_se:DenominacionSocial>
+  <ipp_se:DomicilioSocial contextRef="Icur">PASEO DE LA CASTELLANA 4, MADRID (ESPAÑA)</ipp_se:DomicilioSocial>
+  <ipp_se:CIF contextRef="Icur">A-08168064</ipp_se:CIF>
+  <ipp_se:I0005 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">46579000</ipp_se:I0005>
+  <ipp_se:I0005 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">8204000</ipp_se:I0005>
+  <ipp_se:I0025 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">8864000</ipp_se:I0025>
+  <ipp_se:I0025 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">7373000</ipp_se:I0025>
+  <ipp_se:I0045 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">317000</ipp_se:I0045>
+  <ipp_se:I0045 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">342000</ipp_se:I0045>
+  <ipp_se:I0046 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">317000</ipp_se:I0046>
+  <ipp_se:I0046 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">342000</ipp_se:I0046>
+  <ipp_se:I0050 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">0</ipp_se:I0050>
+  <ipp_se:I0050 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">0</ipp_se:I0050>
+  <ipp_se:I0055 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1145912000</ipp_se:I0055>
+  <ipp_se:I0055 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1145901000</ipp_se:I0055>
+  <ipp_se:I0058 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1145912000</ipp_se:I0058>
+  <ipp_se:I0058 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1145901000</ipp_se:I0058>
+  <ipp_se:I0060 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">17393000</ipp_se:I0060>
+  <ipp_se:I0060 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">63504000</ipp_se:I0060>
+  <ipp_se:I0061 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">17351000</ipp_se:I0061>
+  <ipp_se:I0061 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">63471000</ipp_se:I0061>
+  <ipp_se:I0062 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">42000</ipp_se:I0062>
+  <ipp_se:I0062 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">33000</ipp_se:I0062>
+  <ipp_se:I0075 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">153000</ipp_se:I0075>
+  <ipp_se:I0100 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1219218000</ipp_se:I0100>
+  <ipp_se:I0100 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1225324000</ipp_se:I0100>
+  <ipp_se:I0170 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">208557000</ipp_se:I0170>
+  <ipp_se:I0170 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">296832000</ipp_se:I0170>
+  <ipp_se:I0120 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">208154000</ipp_se:I0120>
+  <ipp_se:I0120 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">292612000</ipp_se:I0120>
+  <ipp_se:I0124 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">208154000</ipp_se:I0124>
+  <ipp_se:I0124 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">292612000</ipp_se:I0124>
+  <ipp_se:I0131 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">0</ipp_se:I0131>
+  <ipp_se:I0131 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">0</ipp_se:I0131>
+  <ipp_se:I0140 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">403000</ipp_se:I0140>
+  <ipp_se:I0140 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">363000</ipp_se:I0140>
+  <ipp_se:I0145 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">0</ipp_se:I0145>
+  <ipp_se:I0145 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">3857000</ipp_se:I0145>
+  <ipp_se:I0146 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">3857000</ipp_se:I0146>
+  <ipp_se:I0195 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1010661000</ipp_se:I0195>
+  <ipp_se:I0195 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">928492000</ipp_se:I0195>
+  <ipp_se:I0180 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1010661000</ipp_se:I0180>
+  <ipp_se:I0180 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">928492000</ipp_se:I0180>
+  <ipp_se:I0171 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">36000000</ipp_se:I0171>
+  <ipp_se:I0171 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">36000000</ipp_se:I0171>
+  <ipp_se:I0161 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">36000000</ipp_se:I0161>
+  <ipp_se:I0161 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">36000000</ipp_se:I0161>
+  <ipp_se:I0172 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1533000</ipp_se:I0172>
+  <ipp_se:I0172 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1533000</ipp_se:I0172>
+  <ipp_se:I0173 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">832478000</ipp_se:I0173>
+  <ipp_se:I0173 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">785538000</ipp_se:I0173>
+  <ipp_se:I0175 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">176938000</ipp_se:I0175>
+  <ipp_se:I0175 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">139981000</ipp_se:I0175>
+  <ipp_se:I0176 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-36288000</ipp_se:I0176>
+  <ipp_se:I0176 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">-34560000</ipp_se:I0176>
+  <ipp_se:I0188 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">0</ipp_se:I0188>
+  <ipp_se:I0188 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">0</ipp_se:I0188>
+  <ipp_se:I0200 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1219218000</ipp_se:I0200>
+  <ipp_se:I0200 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1225324000</ipp_se:I0200>
+  <ipp_se:I0220 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">0</ipp_se:I0220>
+  <ipp_se:I0220 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">0</ipp_se:I0220>
+  <ipp_se:I0220 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">0</ipp_se:I0220>
+  <ipp_se:I0220 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">0</ipp_se:I0220>
+  <ipp_se:I0240 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">0</ipp_se:I0240>
+  <ipp_se:I0240 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">0</ipp_se:I0240>
+  <ipp_se:I0240 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">0</ipp_se:I0240>
+  <ipp_se:I0240 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">0</ipp_se:I0240>
+  <ipp_se:I0245 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">0</ipp_se:I0245>
+  <ipp_se:I0245 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">0</ipp_se:I0245>
+  <ipp_se:I0245 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">0</ipp_se:I0245>
+  <ipp_se:I0245 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">0</ipp_se:I0245>
+  <ipp_se:I0246 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">39607000</ipp_se:I0246>
+  <ipp_se:I0246 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">46210000</ipp_se:I0246>
+  <ipp_se:I0246 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">197390000</ipp_se:I0246>
+  <ipp_se:I0246 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">160474000</ipp_se:I0246>
+  <ipp_se:I0247 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-3565000</ipp_se:I0247>
+  <ipp_se:I0247 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-5970000</ipp_se:I0247>
+  <ipp_se:I0247 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-6475000</ipp_se:I0247>
+  <ipp_se:I0247 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-9613000</ipp_se:I0247>
+  <ipp_se:I0249 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-10165000</ipp_se:I0249>
+  <ipp_se:I0249 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-9029000</ipp_se:I0249>
+  <ipp_se:I0249 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-18082000</ipp_se:I0249>
+  <ipp_se:I0249 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-16014000</ipp_se:I0249>
+  <ipp_se:I0265 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">25877000</ipp_se:I0265>
+  <ipp_se:I0265 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">31211000</ipp_se:I0265>
+  <ipp_se:I0265 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">172833000</ipp_se:I0265>
+  <ipp_se:I0265 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">134847000</ipp_se:I0265>
+  <ipp_se:I0270 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">1610000</ipp_se:I0270>
+  <ipp_se:I0270 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">2627000</ipp_se:I0270>
+  <ipp_se:I0270 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">4105000</ipp_se:I0270>
+  <ipp_se:I0270 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">5134000</ipp_se:I0270>
+  <ipp_se:I0280 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">27487000</ipp_se:I0280>
+  <ipp_se:I0280 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">33838000</ipp_se:I0280>
+  <ipp_se:I0280 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">176938000</ipp_se:I0280>
+  <ipp_se:I0280 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">139981000</ipp_se:I0280>
+  <ipp_se:I0300 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">27487000</ipp_se:I0300>
+  <ipp_se:I0300 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">33838000</ipp_se:I0300>
+  <ipp_se:I0300 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">176938000</ipp_se:I0300>
+  <ipp_se:I0300 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">139981000</ipp_se:I0300>
+  <ipp_se:I0290 unitRef="euro" decimals="2" contextRef="Dcur_PeriodoCorrienteActualMiembro">0.23</ipp_se:I0290>
+  <ipp_se:I0290 unitRef="euro" decimals="2" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">0.28</ipp_se:I0290>
+  <ipp_se:I0290 unitRef="euro" decimals="2" contextRef="Dcur_AcumuladoActualMiembro">1.47</ipp_se:I0290>
+  <ipp_se:I0290 unitRef="euro" decimals="2" contextRef="Dpre_AcumuladoAnteriorMiembro">1.17</ipp_se:I0290>
+  <ipp_se:I0295 unitRef="euro" decimals="2" contextRef="Dcur_PeriodoCorrienteActualMiembro">0.23</ipp_se:I0295>
+  <ipp_se:I0295 unitRef="euro" decimals="2" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">0.28</ipp_se:I0295>
+  <ipp_se:I0295 unitRef="euro" decimals="2" contextRef="Dcur_AcumuladoActualMiembro">1.47</ipp_se:I0295>
+  <ipp_se:I0295 unitRef="euro" decimals="2" contextRef="Dpre_AcumuladoAnteriorMiembro">1.17</ipp_se:I0295>
+  <ipp_se:I0305 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">176938000</ipp_se:I0305>
+  <ipp_se:I0305 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">139981000</ipp_se:I0305>
+  <ipp_se:I0310 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-29000</ipp_se:I0310>
+  <ipp_se:I0310 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0310>
+  <ipp_se:I0315 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0315>
+  <ipp_se:I0315 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0315>
+  <ipp_se:I0320 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0320>
+  <ipp_se:I0320 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0320>
+  <ipp_se:I0325 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0325>
+  <ipp_se:I0325 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0325>
+  <ipp_se:I0330 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0330>
+  <ipp_se:I0330 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0330>
+  <ipp_se:I0335 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0335>
+  <ipp_se:I0335 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0335>
+  <ipp_se:I0340 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I0340>
+  <ipp_se:I0340 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I0340>
+  <ipp_se:I0345 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-38000</ipp_se:I0345>
+  <ipp_se:I0360 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">9000</ipp_se:I0360>
+  <ipp_se:I0400 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">176909000</ipp_se:I0400>
+  <ipp_se:I0400 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">139981000</ipp_se:I0400>
+  <ipp_se:I3010 unitRef="euro" decimals="-3" contextRef="Icur_Individual_CapitalMiembro">36000000</ipp_se:I3010>
+  <ipp_se:I3010 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">787071000</ipp_se:I3010>
+  <ipp_se:I3010 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">105421000</ipp_se:I3010>
+  <ipp_se:I3010 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">928492000</ipp_se:I3010>
+  <ipp_se:I3011 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3011>
+  <ipp_se:I3012 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3012>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_CapitalMiembro">36000000</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">787071000</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">105421000</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3015>
+  <ipp_se:I3015 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">928492000</ipp_se:I3015>
+  <ipp_se:I3020 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">-29000</ipp_se:I3020>
+  <ipp_se:I3020 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">176938000</ipp_se:I3020>
+  <ipp_se:I3020 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">176909000</ipp_se:I3020>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_CapitalMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">-94740000</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3025>
+  <ipp_se:I3025 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">-94740000</ipp_se:I3025>
+  <ipp_se:I3026 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3026>
+  <ipp_se:I3027 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3027>
+  <ipp_se:I3028 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">-94740000</ipp_se:I3028>
+  <ipp_se:I3028 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">-94740000</ipp_se:I3028>
+  <ipp_se:I3029 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3029>
+  <ipp_se:I3030 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3030>
+  <ipp_se:I3032 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3032>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_CapitalMiembro">0</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">46969000</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">-46969000</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3035>
+  <ipp_se:I3035 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3035>
+  <ipp_se:I3036 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3036>
+  <ipp_se:I3037 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">46969000</ipp_se:I3037>
+  <ipp_se:I3037 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">-46969000</ipp_se:I3037>
+  <ipp_se:I3037 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3037>
+  <ipp_se:I3038 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3038>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_CapitalMiembro">36000000</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_PrimaEmisionReservasMiembro">834011000</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_ResultadoPeriodoMiembro">140650000</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3040>
+  <ipp_se:I3040 unitRef="euro" decimals="-3" contextRef="Icur_Individual_TotalPatrimonioNetoMiembro">1010661000</ipp_se:I3040>
+  <ipp_se:I3050 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_CapitalMiembro">36000000</ipp_se:I3050>
+  <ipp_se:I3050 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">682261000</ipp_se:I3050>
+  <ipp_se:I3050 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">158690000</ipp_se:I3050>
+  <ipp_se:I3050 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">876951000</ipp_se:I3050>
+  <ipp_se:I3051 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3051>
+  <ipp_se:I3052 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3052>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_CapitalMiembro">36000000</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">682261000</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">158690000</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3055>
+  <ipp_se:I3055 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">876951000</ipp_se:I3055>
+  <ipp_se:I3060 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">139981000</ipp_se:I3060>
+  <ipp_se:I3060 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">139981000</ipp_se:I3060>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_CapitalMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">-88440000</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3065>
+  <ipp_se:I3065 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">-88440000</ipp_se:I3065>
+  <ipp_se:I3066 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3066>
+  <ipp_se:I3067 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3067>
+  <ipp_se:I3068 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">-88440000</ipp_se:I3068>
+  <ipp_se:I3068 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">-88440000</ipp_se:I3068>
+  <ipp_se:I3069 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3069>
+  <ipp_se:I3070 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3070>
+  <ipp_se:I3072 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3072>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_CapitalMiembro">0</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">104810000</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">-104810000</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3075>
+  <ipp_se:I3075 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3075>
+  <ipp_se:I3076 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3076>
+  <ipp_se:I3077 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">104810000</ipp_se:I3077>
+  <ipp_se:I3077 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">-104810000</ipp_se:I3077>
+  <ipp_se:I3077 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3077>
+  <ipp_se:I3078 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">0</ipp_se:I3078>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_CapitalMiembro">36000000</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_PrimaEmisionReservasMiembro">787071000</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_ResultadoPeriodoMiembro">105421000</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_AjustesPorCambiosValorMiembro">0</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_SubvencionesDonacionesLegadosRecibidosMiembro">0</ipp_se:I3080>
+  <ipp_se:I3080 unitRef="euro" decimals="-3" contextRef="Ipre_Individual_TotalPatrimonioNetoMiembro">928492000</ipp_se:I3080>
+  <ipp_se:I7435 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">13675000</ipp_se:I7435>
+  <ipp_se:I7435 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-21376000</ipp_se:I7435>
+  <ipp_se:I7405 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I7405>
+  <ipp_se:I7405 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I7405>
+  <ipp_se:I7410 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">77606000</ipp_se:I7410>
+  <ipp_se:I7410 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">51690000</ipp_se:I7410>
+  <ipp_se:I7415 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">92988000</ipp_se:I7415>
+  <ipp_se:I7415 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">66848000</ipp_se:I7415>
+  <ipp_se:I7416 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-15382000</ipp_se:I7416>
+  <ipp_se:I7416 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-15158000</ipp_se:I7416>
+  <ipp_se:I7425 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-63931000</ipp_se:I7425>
+  <ipp_se:I7425 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-73066000</ipp_se:I7425>
+  <ipp_se:I7460 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">192802000</ipp_se:I7460>
+  <ipp_se:I7460 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">155557000</ipp_se:I7460>
+  <ipp_se:I7450 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">194065000</ipp_se:I7450>
+  <ipp_se:I7450 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">158263000</ipp_se:I7450>
+  <ipp_se:I7459 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">194065000</ipp_se:I7459>
+  <ipp_se:I7459 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">158263000</ipp_se:I7459>
+  <ipp_se:I7440 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-1263000</ipp_se:I7440>
+  <ipp_se:I7440 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-2706000</ipp_se:I7440>
+  <ipp_se:I7441 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-54000</ipp_se:I7441>
+  <ipp_se:I7441 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-127000</ipp_se:I7441>
+  <ipp_se:I7444 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-1165000</ipp_se:I7444>
+  <ipp_se:I7444 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-2500000</ipp_se:I7444>
+  <ipp_se:I7448 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-44000</ipp_se:I7448>
+  <ipp_se:I7448 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-79000</ipp_se:I7448>
+  <ipp_se:I7490 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-168102000</ipp_se:I7490>
+  <ipp_se:I7490 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-135146000</ipp_se:I7490>
+  <ipp_se:I7480 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I7480>
+  <ipp_se:I7480 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I7480>
+  <ipp_se:I7470 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-168102000</ipp_se:I7470>
+  <ipp_se:I7470 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-135146000</ipp_se:I7470>
+  <ipp_se:I7471 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-94740000</ipp_se:I7471>
+  <ipp_se:I7471 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-88440000</ipp_se:I7471>
+  <ipp_se:I7475 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-6362000</ipp_se:I7475>
+  <ipp_se:I7475 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-6706000</ipp_se:I7475>
+  <ipp_se:I7478 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-67000000</ipp_se:I7478>
+  <ipp_se:I7478 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-40000000</ipp_se:I7478>
+  <ipp_se:I7495 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">38375000</ipp_se:I7495>
+  <ipp_se:I7495 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-965000</ipp_se:I7495>
+  <ipp_se:I7499 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">8204000</ipp_se:I7499>
+  <ipp_se:I7499 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">9169000</ipp_se:I7499>
+  <ipp_se:I7500 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">46579000</ipp_se:I7500>
+  <ipp_se:I7500 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">8204000</ipp_se:I7500>
+  <ipp_se:I7550 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">46579000</ipp_se:I7550>
+  <ipp_se:I7550 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">8204000</ipp_se:I7550>
+  <ipp_se:I7600 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">46579000</ipp_se:I7600>
+  <ipp_se:I7600 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">8204000</ipp_se:I7600>
+  <ipp_se:ComentariosEstadoFlujosEfectivoIndividual contextRef="Dcur">La entidad individual cabecera de Grupo, al no ser una entidad aseguradora, presenta el Estado de Flujos de Efectivo en su Informe Anual siguiendo el método indirecto, de acuerdo con el Plan General de Contabilidad.</ipp_se:ComentariosEstadoFlujosEfectivoIndividual>
+  <ipp_se:I1005 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1163531000</ipp_se:I1005>
+  <ipp_se:I1005 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1256195000</ipp_se:I1005>
+  <ipp_se:I1010 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">29000</ipp_se:I1010>
+  <ipp_se:I1010 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">27000</ipp_se:I1010>
+  <ipp_se:I1015 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">340814000</ipp_se:I1015>
+  <ipp_se:I1015 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">380581000</ipp_se:I1015>
+  <ipp_se:I1020 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">8105731000</ipp_se:I1020>
+  <ipp_se:I1020 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">8148187000</ipp_se:I1020>
+  <ipp_se:I1025 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1421324000</ipp_se:I1025>
+  <ipp_se:I1025 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1161296000</ipp_se:I1025>
+  <ipp_se:I1041 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">837376000</ipp_se:I1041>
+  <ipp_se:I1041 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">842528000</ipp_se:I1041>
+  <ipp_se:I1045 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">867090000</ipp_se:I1045>
+  <ipp_se:I1045 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">694034000</ipp_se:I1045>
+  <ipp_se:I1046 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">306009000</ipp_se:I1046>
+  <ipp_se:I1046 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">311248000</ipp_se:I1046>
+  <ipp_se:I1047 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">561081000</ipp_se:I1047>
+  <ipp_se:I1047 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">382786000</ipp_se:I1047>
+  <ipp_se:I1050 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">936112000</ipp_se:I1050>
+  <ipp_se:I1050 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">907513000</ipp_se:I1050>
+  <ipp_se:I1051 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">792951000</ipp_se:I1051>
+  <ipp_se:I1051 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">774794000</ipp_se:I1051>
+  <ipp_se:I1053 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">344000</ipp_se:I1053>
+  <ipp_se:I1053 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">5242000</ipp_se:I1053>
+  <ipp_se:I1052 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">142817000</ipp_se:I1052>
+  <ipp_se:I1052 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">127477000</ipp_se:I1052>
+  <ipp_se:I1055 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">85491000</ipp_se:I1055>
+  <ipp_se:I1055 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">84837000</ipp_se:I1055>
+  <ipp_se:I1056 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">85491000</ipp_se:I1056>
+  <ipp_se:I1056 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">84837000</ipp_se:I1056>
+  <ipp_se:I1060 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">177473000</ipp_se:I1060>
+  <ipp_se:I1060 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">213743000</ipp_se:I1060>
+  <ipp_se:I1061 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">80957000</ipp_se:I1061>
+  <ipp_se:I1061 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">129427000</ipp_se:I1061>
+  <ipp_se:I1062 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">96516000</ipp_se:I1062>
+  <ipp_se:I1062 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">84316000</ipp_se:I1062>
+  <ipp_se:I1075 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">544406000</ipp_se:I1075>
+  <ipp_se:I1075 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">512477000</ipp_se:I1075>
+  <ipp_se:I1100 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">14479377000</ipp_se:I1100>
+  <ipp_se:I1100 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">14201418000</ipp_se:I1100>
+  <ipp_se:I1170 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">11275241000</ipp_se:I1170>
+  <ipp_se:I1170 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">11122814000</ipp_se:I1170>
+  <ipp_se:I1120 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">870637000</ipp_se:I1120>
+  <ipp_se:I1120 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">824427000</ipp_se:I1120>
+  <ipp_se:I1121 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">200439000</ipp_se:I1121>
+  <ipp_se:I1121 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">200266000</ipp_se:I1121>
+  <ipp_se:I1123 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">2012000</ipp_se:I1123>
+  <ipp_se:I1123 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">7494000</ipp_se:I1123>
+  <ipp_se:I1124 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">668186000</ipp_se:I1124>
+  <ipp_se:I1124 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">616667000</ipp_se:I1124>
+  <ipp_se:I1131 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">9567700000</ipp_se:I1131>
+  <ipp_se:I1131 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">9425183000</ipp_se:I1131>
+  <ipp_se:I1132 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1296520000</ipp_se:I1132>
+  <ipp_se:I1132 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1262816000</ipp_se:I1132>
+  <ipp_se:I1133 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">6022000</ipp_se:I1133>
+  <ipp_se:I1133 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">5361000</ipp_se:I1133>
+  <ipp_se:I1134 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">5569344000</ipp_se:I1134>
+  <ipp_se:I1134 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">5499113000</ipp_se:I1134>
+  <ipp_se:I1135 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">2633399000</ipp_se:I1135>
+  <ipp_se:I1135 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">2600591000</ipp_se:I1135>
+  <ipp_se:I1136 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">5179000</ipp_se:I1136>
+  <ipp_se:I1136 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">5933000</ipp_se:I1136>
+  <ipp_se:I1137 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">57236000</ipp_se:I1137>
+  <ipp_se:I1137 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">51369000</ipp_se:I1137>
+  <ipp_se:I1140 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">184050000</ipp_se:I1140>
+  <ipp_se:I1140 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">165193000</ipp_se:I1140>
+  <ipp_se:I1145 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">350607000</ipp_se:I1145>
+  <ipp_se:I1145 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">384954000</ipp_se:I1145>
+  <ipp_se:I1146 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">69683000</ipp_se:I1146>
+  <ipp_se:I1146 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">52308000</ipp_se:I1146>
+  <ipp_se:I1147 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">280924000</ipp_se:I1147>
+  <ipp_se:I1147 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">332646000</ipp_se:I1147>
+  <ipp_se:I1150 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">302247000</ipp_se:I1150>
+  <ipp_se:I1150 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">323057000</ipp_se:I1150>
+  <ipp_se:I1195 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">3204136000</ipp_se:I1195>
+  <ipp_se:I1195 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">3078604000</ipp_se:I1195>
+  <ipp_se:I1180 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">2424730000</ipp_se:I1180>
+  <ipp_se:I1180 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">2185289000</ipp_se:I1180>
+  <ipp_se:I1171 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">36000000</ipp_se:I1171>
+  <ipp_se:I1171 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">36000000</ipp_se:I1171>
+  <ipp_se:I1161 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">36000000</ipp_se:I1161>
+  <ipp_se:I1161 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">36000000</ipp_se:I1161>
+  <ipp_se:I1172 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">1533000</ipp_se:I1172>
+  <ipp_se:I1172 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1533000</ipp_se:I1172>
+  <ipp_se:I1173 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">2093584000</ipp_se:I1173>
+  <ipp_se:I1173 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1874977000</ipp_se:I1173>
+  <ipp_se:I1174 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-22259000</ipp_se:I1174>
+  <ipp_se:I1174 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">-18108000</ipp_se:I1174>
+  <ipp_se:I1175 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">352160000</ipp_se:I1175>
+  <ipp_se:I1175 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">325447000</ipp_se:I1175>
+  <ipp_se:I1176 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-36288000</ipp_se:I1176>
+  <ipp_se:I1176 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">-34560000</ipp_se:I1176>
+  <ipp_se:I1188 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">439063000</ipp_se:I1188>
+  <ipp_se:I1188 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">567322000</ipp_se:I1188>
+  <ipp_se:I1183 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">439063000</ipp_se:I1183>
+  <ipp_se:I1183 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">567322000</ipp_se:I1183>
+  <ipp_se:I1181 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">535142000</ipp_se:I1181>
+  <ipp_se:I1181 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">676483000</ipp_se:I1181>
+  <ipp_se:I1184 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-26120000</ipp_se:I1184>
+  <ipp_se:I1184 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">-24141000</ipp_se:I1184>
+  <ipp_se:I1185 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-67734000</ipp_se:I1185>
+  <ipp_se:I1185 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">-86038000</ipp_se:I1185>
+  <ipp_se:I1186 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">-2225000</ipp_se:I1186>
+  <ipp_se:I1186 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">1018000</ipp_se:I1186>
+  <ipp_se:I1189 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">2863793000</ipp_se:I1189>
+  <ipp_se:I1189 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">2752611000</ipp_se:I1189>
+  <ipp_se:I1193 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">340343000</ipp_se:I1193>
+  <ipp_se:I1193 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">325993000</ipp_se:I1193>
+  <ipp_se:I1200 unitRef="euro" decimals="-3" contextRef="Icur_PeriodoActualBalanceMiembro">14479377000</ipp_se:I1200>
+  <ipp_se:I1200 unitRef="euro" decimals="-3" contextRef="Ipre_PeriodoCierreAnteriorBalanceMiembro">14201418000</ipp_se:I1200>
+  <ipp_se:I1201 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">1352096000</ipp_se:I1201>
+  <ipp_se:I1201 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">1308119000</ipp_se:I1201>
+  <ipp_se:I1201 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">2677478000</ipp_se:I1201>
+  <ipp_se:I1201 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">2576619000</ipp_se:I1201>
+  <ipp_se:I1202 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">51680000</ipp_se:I1202>
+  <ipp_se:I1202 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">62872000</ipp_se:I1202>
+  <ipp_se:I1202 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">125051000</ipp_se:I1202>
+  <ipp_se:I1202 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">136339000</ipp_se:I1202>
+  <ipp_se:I1203 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">110213000</ipp_se:I1203>
+  <ipp_se:I1203 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">113768000</ipp_se:I1203>
+  <ipp_se:I1203 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">249536000</ipp_se:I1203>
+  <ipp_se:I1203 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">254346000</ipp_se:I1203>
+  <ipp_se:I1204 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-757206000</ipp_se:I1204>
+  <ipp_se:I1204 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-727996000</ipp_se:I1204>
+  <ipp_se:I1204 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-1495345000</ipp_se:I1204>
+  <ipp_se:I1204 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-1418013000</ipp_se:I1204>
+  <ipp_se:I1205 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-3835000</ipp_se:I1205>
+  <ipp_se:I1205 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-3437000</ipp_se:I1205>
+  <ipp_se:I1205 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-7334000</ipp_se:I1205>
+  <ipp_se:I1205 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-6030000</ipp_se:I1205>
+  <ipp_se:I1207 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-482583000</ipp_se:I1207>
+  <ipp_se:I1207 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-484012000</ipp_se:I1207>
+  <ipp_se:I1207 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-974333000</ipp_se:I1207>
+  <ipp_se:I1207 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-971105000</ipp_se:I1207>
+  <ipp_se:I1209 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-9158000</ipp_se:I1209>
+  <ipp_se:I1209 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-3608000</ipp_se:I1209>
+  <ipp_se:I1209 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-12217000</ipp_se:I1209>
+  <ipp_se:I1209 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-6661000</ipp_se:I1209>
+  <ipp_se:I1210 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-33785000</ipp_se:I1210>
+  <ipp_se:I1210 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-41726000</ipp_se:I1210>
+  <ipp_se:I1210 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-64827000</ipp_se:I1210>
+  <ipp_se:I1210 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-77784000</ipp_se:I1210>
+  <ipp_se:I1220 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">227422000</ipp_se:I1220>
+  <ipp_se:I1220 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">223980000</ipp_se:I1220>
+  <ipp_se:I1220 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">498009000</ipp_se:I1220>
+  <ipp_se:I1220 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">487711000</ipp_se:I1220>
+  <ipp_se:I1221 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">364554000</ipp_se:I1221>
+  <ipp_se:I1221 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">359217000</ipp_se:I1221>
+  <ipp_se:I1221 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">736502000</ipp_se:I1221>
+  <ipp_se:I1221 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">752703000</ipp_se:I1221>
+  <ipp_se:I1222 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">100279000</ipp_se:I1222>
+  <ipp_se:I1222 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">98777000</ipp_se:I1222>
+  <ipp_se:I1222 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">199004000</ipp_se:I1222>
+  <ipp_se:I1222 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">202664000</ipp_se:I1222>
+  <ipp_se:I1223 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">5259000</ipp_se:I1223>
+  <ipp_se:I1223 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">3380000</ipp_se:I1223>
+  <ipp_se:I1223 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">17254000</ipp_se:I1223>
+  <ipp_se:I1223 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">26418000</ipp_se:I1223>
+  <ipp_se:I1224 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">4367000</ipp_se:I1224>
+  <ipp_se:I1224 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">2425000</ipp_se:I1224>
+  <ipp_se:I1224 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">8671000</ipp_se:I1224>
+  <ipp_se:I1224 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">4849000</ipp_se:I1224>
+  <ipp_se:I1225 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-329859000</ipp_se:I1225>
+  <ipp_se:I1225 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-371717000</ipp_se:I1225>
+  <ipp_se:I1225 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-688901000</ipp_se:I1225>
+  <ipp_se:I1225 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-735738000</ipp_se:I1225>
+  <ipp_se:I1226 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-31526000</ipp_se:I1226>
+  <ipp_se:I1226 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-7814000</ipp_se:I1226>
+  <ipp_se:I1226 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-61767000</ipp_se:I1226>
+  <ipp_se:I1226 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-82988000</ipp_se:I1226>
+  <ipp_se:I1227 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-1133000</ipp_se:I1227>
+  <ipp_se:I1227 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-1330000</ipp_se:I1227>
+  <ipp_se:I1227 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-1505000</ipp_se:I1227>
+  <ipp_se:I1227 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-2380000</ipp_se:I1227>
+  <ipp_se:I1228 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-38422000</ipp_se:I1228>
+  <ipp_se:I1228 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-36287000</ipp_se:I1228>
+  <ipp_se:I1228 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-77129000</ipp_se:I1228>
+  <ipp_se:I1228 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-73320000</ipp_se:I1228>
+  <ipp_se:I1229 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">469000</ipp_se:I1229>
+  <ipp_se:I1229 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-1045000</ipp_se:I1229>
+  <ipp_se:I1229 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-936000</ipp_se:I1229>
+  <ipp_se:I1229 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-2256000</ipp_se:I1229>
+  <ipp_se:I1230 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-17247000</ipp_se:I1230>
+  <ipp_se:I1230 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-19118000</ipp_se:I1230>
+  <ipp_se:I1230 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-34887000</ipp_se:I1230>
+  <ipp_se:I1230 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-36433000</ipp_se:I1230>
+  <ipp_se:I1231 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-25009000</ipp_se:I1231>
+  <ipp_se:I1231 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-5597000</ipp_se:I1231>
+  <ipp_se:I1231 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-37142000</ipp_se:I1231>
+  <ipp_se:I1231 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-9678000</ipp_se:I1231>
+  <ipp_se:I1240 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">31732000</ipp_se:I1240>
+  <ipp_se:I1240 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">20891000</ipp_se:I1240>
+  <ipp_se:I1240 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">59164000</ipp_se:I1240>
+  <ipp_se:I1240 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">43841000</ipp_se:I1240>
+  <ipp_se:I1245 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">259154000</ipp_se:I1245>
+  <ipp_se:I1245 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">244871000</ipp_se:I1245>
+  <ipp_se:I1245 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">557173000</ipp_se:I1245>
+  <ipp_se:I1245 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">531552000</ipp_se:I1245>
+  <ipp_se:I1246 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">1000</ipp_se:I1246>
+  <ipp_se:I1246 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-5997000</ipp_se:I1246>
+  <ipp_se:I1246 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-3084000</ipp_se:I1246>
+  <ipp_se:I1246 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-10098000</ipp_se:I1246>
+  <ipp_se:I1247 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">3356000</ipp_se:I1247>
+  <ipp_se:I1247 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">3255000</ipp_se:I1247>
+  <ipp_se:I1247 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-4010000</ipp_se:I1247>
+  <ipp_se:I1247 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-8730000</ipp_se:I1247>
+  <ipp_se:I1248 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">13388000</ipp_se:I1248>
+  <ipp_se:I1248 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">13651000</ipp_se:I1248>
+  <ipp_se:I1248 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">24629000</ipp_se:I1248>
+  <ipp_se:I1248 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">26417000</ipp_se:I1248>
+  <ipp_se:I1249 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-28022000</ipp_se:I1249>
+  <ipp_se:I1249 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-35035000</ipp_se:I1249>
+  <ipp_se:I1249 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-51934000</ipp_se:I1249>
+  <ipp_se:I1249 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-63678000</ipp_se:I1249>
+  <ipp_se:I1265 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">247877000</ipp_se:I1265>
+  <ipp_se:I1265 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">220745000</ipp_se:I1265>
+  <ipp_se:I1265 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">522774000</ipp_se:I1265>
+  <ipp_se:I1265 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">475463000</ipp_se:I1265>
+  <ipp_se:I1270 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">-67207000</ipp_se:I1270>
+  <ipp_se:I1270 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">-53578000</ipp_se:I1270>
+  <ipp_se:I1270 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">-136352000</ipp_se:I1270>
+  <ipp_se:I1270 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">-118123000</ipp_se:I1270>
+  <ipp_se:I1280 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">180670000</ipp_se:I1280>
+  <ipp_se:I1280 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">167167000</ipp_se:I1280>
+  <ipp_se:I1280 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">386422000</ipp_se:I1280>
+  <ipp_se:I1280 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">357340000</ipp_se:I1280>
+  <ipp_se:I1288 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">180670000</ipp_se:I1288>
+  <ipp_se:I1288 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">167167000</ipp_se:I1288>
+  <ipp_se:I1288 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">386422000</ipp_se:I1288>
+  <ipp_se:I1288 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">357340000</ipp_se:I1288>
+  <ipp_se:I1300 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">164913000</ipp_se:I1300>
+  <ipp_se:I1300 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">153325000</ipp_se:I1300>
+  <ipp_se:I1300 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">352160000</ipp_se:I1300>
+  <ipp_se:I1300 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">325447000</ipp_se:I1300>
+  <ipp_se:I1289 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoCorrienteActualMiembro">15757000</ipp_se:I1289>
+  <ipp_se:I1289 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">13842000</ipp_se:I1289>
+  <ipp_se:I1289 unitRef="euro" decimals="-3" contextRef="Dcur_AcumuladoActualMiembro">34262000</ipp_se:I1289>
+  <ipp_se:I1289 unitRef="euro" decimals="-3" contextRef="Dpre_AcumuladoAnteriorMiembro">31893000</ipp_se:I1289>
+  <ipp_se:I1290 unitRef="euro" decimals="2" contextRef="Dcur_PeriodoCorrienteActualMiembro">1.40</ipp_se:I1290>
+  <ipp_se:I1290 unitRef="euro" decimals="2" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">1.30</ipp_se:I1290>
+  <ipp_se:I1290 unitRef="euro" decimals="2" contextRef="Dcur_AcumuladoActualMiembro">2.99</ipp_se:I1290>
+  <ipp_se:I1290 unitRef="euro" decimals="2" contextRef="Dpre_AcumuladoAnteriorMiembro">2.76</ipp_se:I1290>
+  <ipp_se:I1295 unitRef="euro" decimals="2" contextRef="Dcur_PeriodoCorrienteActualMiembro">1.40</ipp_se:I1295>
+  <ipp_se:I1295 unitRef="euro" decimals="2" contextRef="Dpre_PeriodoCorrienteAnteriorMiembro">1.30</ipp_se:I1295>
+  <ipp_se:I1295 unitRef="euro" decimals="2" contextRef="Dcur_AcumuladoActualMiembro">2.99</ipp_se:I1295>
+  <ipp_se:I1295 unitRef="euro" decimals="2" contextRef="Dpre_AcumuladoAnteriorMiembro">2.76</ipp_se:I1295>
+  <ipp_se:I1305 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">180670000</ipp_se:I1305>
+  <ipp_se:I1305 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">167167000</ipp_se:I1305>
+  <ipp_se:I1305 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">386422000</ipp_se:I1305>
+  <ipp_se:I1305 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">357340000</ipp_se:I1305>
+  <ipp_se:I1310 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">232000</ipp_se:I1310>
+  <ipp_se:I1310 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">31893000</ipp_se:I1310>
+  <ipp_se:I1310 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-5301000</ipp_se:I1310>
+  <ipp_se:I1310 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">31893000</ipp_se:I1310>
+  <ipp_se:I1370 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-2451000</ipp_se:I1370>
+  <ipp_se:I1370 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">40868000</ipp_se:I1370>
+  <ipp_se:I1370 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-9350000</ipp_se:I1370>
+  <ipp_se:I1370 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">40868000</ipp_se:I1370>
+  <ipp_se:I1373 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">2683000</ipp_se:I1373>
+  <ipp_se:I1373 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-8975000</ipp_se:I1373>
+  <ipp_se:I1373 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">4049000</ipp_se:I1373>
+  <ipp_se:I1373 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-8975000</ipp_se:I1373>
+  <ipp_se:I1345 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-121729000</ipp_se:I1345>
+  <ipp_se:I1345 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-1665000</ipp_se:I1345>
+  <ipp_se:I1345 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-136173000</ipp_se:I1345>
+  <ipp_se:I1345 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-9255000</ipp_se:I1345>
+  <ipp_se:I1315 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-183071000</ipp_se:I1315>
+  <ipp_se:I1315 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">8379000</ipp_se:I1315>
+  <ipp_se:I1315 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-200595000</ipp_se:I1315>
+  <ipp_se:I1315 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-85000</ipp_se:I1315>
+  <ipp_se:I1316 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-189199000</ipp_se:I1316>
+  <ipp_se:I1316 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">6935000</ipp_se:I1316>
+  <ipp_se:I1316 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-201951000</ipp_se:I1316>
+  <ipp_se:I1316 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">4132000</ipp_se:I1316>
+  <ipp_se:I1317 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">6128000</ipp_se:I1317>
+  <ipp_se:I1317 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">1444000</ipp_se:I1317>
+  <ipp_se:I1317 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">1356000</ipp_se:I1317>
+  <ipp_se:I1317 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-4217000</ipp_se:I1317>
+  <ipp_se:I1320 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">0</ipp_se:I1320>
+  <ipp_se:I1320 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">0</ipp_se:I1320>
+  <ipp_se:I1320 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">0</ipp_se:I1320>
+  <ipp_se:I1320 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">0</ipp_se:I1320>
+  <ipp_se:I1325 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">0</ipp_se:I1325>
+  <ipp_se:I1325 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">0</ipp_se:I1325>
+  <ipp_se:I1325 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">0</ipp_se:I1325>
+  <ipp_se:I1325 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">0</ipp_se:I1325>
+  <ipp_se:I1330 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-1659000</ipp_se:I1330>
+  <ipp_se:I1330 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-10580000</ipp_se:I1330>
+  <ipp_se:I1330 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-2480000</ipp_se:I1330>
+  <ipp_se:I1330 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-20314000</ipp_se:I1330>
+  <ipp_se:I1331 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-1659000</ipp_se:I1331>
+  <ipp_se:I1331 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-10580000</ipp_se:I1331>
+  <ipp_se:I1331 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-2480000</ipp_se:I1331>
+  <ipp_se:I1331 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-20314000</ipp_se:I1331>
+  <ipp_se:I1335 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">24006000</ipp_se:I1335>
+  <ipp_se:I1335 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-3056000</ipp_se:I1335>
+  <ipp_se:I1335 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">25578000</ipp_se:I1335>
+  <ipp_se:I1335 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">11934000</ipp_se:I1335>
+  <ipp_se:I1336 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">24006000</ipp_se:I1336>
+  <ipp_se:I1336 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-3056000</ipp_se:I1336>
+  <ipp_se:I1336 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">25578000</ipp_se:I1336>
+  <ipp_se:I1336 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">11934000</ipp_se:I1336>
+  <ipp_se:I1340 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">0</ipp_se:I1340>
+  <ipp_se:I1340 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">0</ipp_se:I1340>
+  <ipp_se:I1340 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">0</ipp_se:I1340>
+  <ipp_se:I1340 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">0</ipp_se:I1340>
+  <ipp_se:I1350 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-1676000</ipp_se:I1350>
+  <ipp_se:I1350 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-1355000</ipp_se:I1350>
+  <ipp_se:I1350 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-3773000</ipp_se:I1350>
+  <ipp_se:I1350 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-2628000</ipp_se:I1350>
+  <ipp_se:I1351 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">-1676000</ipp_se:I1351>
+  <ipp_se:I1351 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">-1355000</ipp_se:I1351>
+  <ipp_se:I1351 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">-3773000</ipp_se:I1351>
+  <ipp_se:I1351 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">-2628000</ipp_se:I1351>
+  <ipp_se:I1360 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">40671000</ipp_se:I1360>
+  <ipp_se:I1360 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">4947000</ipp_se:I1360>
+  <ipp_se:I1360 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">45097000</ipp_se:I1360>
+  <ipp_se:I1360 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">1838000</ipp_se:I1360>
+  <ipp_se:I1400 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">59173000</ipp_se:I1400>
+  <ipp_se:I1400 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">197395000</ipp_se:I1400>
+  <ipp_se:I1400 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">244948000</ipp_se:I1400>
+  <ipp_se:I1400 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">379978000</ipp_se:I1400>
+  <ipp_se:I1398 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">50050000</ipp_se:I1398>
+  <ipp_se:I1398 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">179408000</ipp_se:I1398>
+  <ipp_se:I1398 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">219789000</ipp_se:I1398>
+  <ipp_se:I1398 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">344677000</ipp_se:I1398>
+  <ipp_se:I1399 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoCorrienteActualMiembro">9123000</ipp_se:I1399>
+  <ipp_se:I1399 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoCorrienteAnteriorMiembro">17987000</ipp_se:I1399>
+  <ipp_se:I1399 unitRef="euro" decimals="-3" contextRef="Dcur_ORICPeriodoActualMiembro">25159000</ipp_se:I1399>
+  <ipp_se:I1399 unitRef="euro" decimals="-3" contextRef="Dpre_ORICPeriodoAnteriorMiembro">35301000</ipp_se:I1399>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_CapitalMiembro">36000000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">1876510000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-18108000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">290887000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">567322000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">325993000</ipp_se:I3110>
+  <ipp_se:I3110 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">3078604000</ipp_se:I3110>
+  <ipp_se:I3111 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3111>
+  <ipp_se:I3112 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3112>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_CapitalMiembro">36000000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">1876510000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-18108000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">290887000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">567322000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">325993000</ipp_se:I3115>
+  <ipp_se:I3115 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">3078604000</ipp_se:I3115>
+  <ipp_se:I3120 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">-4112000</ipp_se:I3120>
+  <ipp_se:I3120 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">352160000</ipp_se:I3120>
+  <ipp_se:I3120 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">-128259000</ipp_se:I3120>
+  <ipp_se:I3120 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">25159000</ipp_se:I3120>
+  <ipp_se:I3120 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">244948000</ipp_se:I3120>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_CapitalMiembro">0</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">0</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-4151000</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-94740000</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">0</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">-10778000</ipp_se:I3125>
+  <ipp_se:I3125 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">-109669000</ipp_se:I3125>
+  <ipp_se:I3126 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3126>
+  <ipp_se:I3127 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3127>
+  <ipp_se:I3128 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-94740000</ipp_se:I3128>
+  <ipp_se:I3128 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">-10778000</ipp_se:I3128>
+  <ipp_se:I3128 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">-105518000</ipp_se:I3128>
+  <ipp_se:I3129 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-4151000</ipp_se:I3129>
+  <ipp_se:I3129 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">-4151000</ipp_se:I3129>
+  <ipp_se:I3130 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3130>
+  <ipp_se:I3132 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3132>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_CapitalMiembro">0</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">222719000</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-232435000</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">0</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">-31000</ipp_se:I3135>
+  <ipp_se:I3135 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">-9747000</ipp_se:I3135>
+  <ipp_se:I3136 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3136>
+  <ipp_se:I3137 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">232435000</ipp_se:I3137>
+  <ipp_se:I3137 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-232435000</ipp_se:I3137>
+  <ipp_se:I3137 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3137>
+  <ipp_se:I3138 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">-9716000</ipp_se:I3138>
+  <ipp_se:I3138 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">-31000</ipp_se:I3138>
+  <ipp_se:I3138 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">-9747000</ipp_se:I3138>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_CapitalMiembro">36000000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_PrimaEmisionReservasMiembro">2095117000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-22259000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">315872000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_AjustesPorCambiosValorMiembro">439063000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_ParticipacionesNoControladorasMiembro">340343000</ipp_se:I3140>
+  <ipp_se:I3140 unitRef="euro" decimals="-3" contextRef="Icur_Consolidado_TotalPatrimonioNetoMiembro">3204136000</ipp_se:I3140>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_CapitalMiembro">36000000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">1678807000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-18293000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">262695000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">574443000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">301047000</ipp_se:I3150>
+  <ipp_se:I3150 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">2834699000</ipp_se:I3150>
+  <ipp_se:I3151 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3151>
+  <ipp_se:I3152 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3152>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_CapitalMiembro">36000000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">1678807000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-18293000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">262695000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">574443000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">301047000</ipp_se:I3155>
+  <ipp_se:I3155 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">2834699000</ipp_se:I3155>
+  <ipp_se:I3160 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">26351000</ipp_se:I3160>
+  <ipp_se:I3160 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">325447000</ipp_se:I3160>
+  <ipp_se:I3160 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">-7121000</ipp_se:I3160>
+  <ipp_se:I3160 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">35301000</ipp_se:I3160>
+  <ipp_se:I3160 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">379978000</ipp_se:I3160>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_CapitalMiembro">0</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">0</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">185000</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-88440000</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">0</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">-9801000</ipp_se:I3165>
+  <ipp_se:I3165 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">-98056000</ipp_se:I3165>
+  <ipp_se:I3166 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3166>
+  <ipp_se:I3167 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3167>
+  <ipp_se:I3168 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-88440000</ipp_se:I3168>
+  <ipp_se:I3168 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">-9801000</ipp_se:I3168>
+  <ipp_se:I3168 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">-98241000</ipp_se:I3168>
+  <ipp_se:I3169 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">185000</ipp_se:I3169>
+  <ipp_se:I3169 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">185000</ipp_se:I3169>
+  <ipp_se:I3170 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3170>
+  <ipp_se:I3172 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3172>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_CapitalMiembro">0</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">171352000</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">0</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-208815000</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">0</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">-554000</ipp_se:I3175>
+  <ipp_se:I3175 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">-38017000</ipp_se:I3175>
+  <ipp_se:I3176 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3176>
+  <ipp_se:I3177 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">208815000</ipp_se:I3177>
+  <ipp_se:I3177 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">-208815000</ipp_se:I3177>
+  <ipp_se:I3177 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">0</ipp_se:I3177>
+  <ipp_se:I3178 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">-37463000</ipp_se:I3178>
+  <ipp_se:I3178 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">-554000</ipp_se:I3178>
+  <ipp_se:I3178 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">-38017000</ipp_se:I3178>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_CapitalMiembro">36000000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_PrimaEmisionReservasMiembro">1876510000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AccionesParticipacionesPatrimonioPropiasMiembro">-18108000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ResultadoPeriodoAtribuidoEntidadControladoraMiembro">290887000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_OtrosInstrumentosPatrimonioNetoMiembro">0</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_AjustesPorCambiosValorMiembro">567322000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_ParticipacionesNoControladorasMiembro">325993000</ipp_se:I3180>
+  <ipp_se:I3180 unitRef="euro" decimals="-3" contextRef="Ipre_Consolidado_TotalPatrimonioNetoMiembro">3078604000</ipp_se:I3180>
+  <ipp_se:I8435 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">486461000</ipp_se:I8435>
+  <ipp_se:I8435 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">380885000</ipp_se:I8435>
+  <ipp_se:I8405 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">853416000</ipp_se:I8405>
+  <ipp_se:I8405 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">804945000</ipp_se:I8405>
+  <ipp_se:I8406 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">5150347000</ipp_se:I8406>
+  <ipp_se:I8406 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">5159844000</ipp_se:I8406>
+  <ipp_se:I8407 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-4296931000</ipp_se:I8407>
+  <ipp_se:I8407 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-4354899000</ipp_se:I8407>
+  <ipp_se:I8410 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-261475000</ipp_se:I8410>
+  <ipp_se:I8410 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-322793000</ipp_se:I8410>
+  <ipp_se:I8415 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">509758000</ipp_se:I8415>
+  <ipp_se:I8415 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">404092000</ipp_se:I8415>
+  <ipp_se:I8416 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-771233000</ipp_se:I8416>
+  <ipp_se:I8416 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-726885000</ipp_se:I8416>
+  <ipp_se:I8425 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-105480000</ipp_se:I8425>
+  <ipp_se:I8425 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-101267000</ipp_se:I8425>
+  <ipp_se:I8460 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-467926000</ipp_se:I8460>
+  <ipp_se:I8460 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-57895000</ipp_se:I8460>
+  <ipp_se:I8450 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">2236916000</ipp_se:I8450>
+  <ipp_se:I8450 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1902713000</ipp_se:I8450>
+  <ipp_se:I8451 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">860000</ipp_se:I8451>
+  <ipp_se:I8451 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1112000</ipp_se:I8451>
+  <ipp_se:I8452 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">23829000</ipp_se:I8452>
+  <ipp_se:I8452 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">48602000</ipp_se:I8452>
+  <ipp_se:I8454 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">1696065000</ipp_se:I8454>
+  <ipp_se:I8454 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1417783000</ipp_se:I8454>
+  <ipp_se:I8456 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">270670000</ipp_se:I8456>
+  <ipp_se:I8456 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">218685000</ipp_se:I8456>
+  <ipp_se:I8459 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">47842000</ipp_se:I8459>
+  <ipp_se:I8459 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">47432000</ipp_se:I8459>
+  <ipp_se:I8458 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">197650000</ipp_se:I8458>
+  <ipp_se:I8458 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">169099000</ipp_se:I8458>
+  <ipp_se:I8440 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-2704842000</ipp_se:I8440>
+  <ipp_se:I8440 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-1960608000</ipp_se:I8440>
+  <ipp_se:I8441 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-32405000</ipp_se:I8441>
+  <ipp_se:I8441 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-38495000</ipp_se:I8441>
+  <ipp_se:I8442 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-63886000</ipp_se:I8442>
+  <ipp_se:I8442 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-9640000</ipp_se:I8442>
+  <ipp_se:I8443 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-55207000</ipp_se:I8443>
+  <ipp_se:I8443 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-32583000</ipp_se:I8443>
+  <ipp_se:I8444 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-2177786000</ipp_se:I8444>
+  <ipp_se:I8444 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-1682911000</ipp_se:I8444>
+  <ipp_se:I8447 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-97426000</ipp_se:I8447>
+  <ipp_se:I8447 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-34742000</ipp_se:I8447>
+  <ipp_se:I8448 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-278132000</ipp_se:I8448>
+  <ipp_se:I8448 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-162237000</ipp_se:I8448>
+  <ipp_se:I8490 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-111238000</ipp_se:I8490>
+  <ipp_se:I8490 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-98708000</ipp_se:I8490>
+  <ipp_se:I8480 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">202000</ipp_se:I8480>
+  <ipp_se:I8480 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">185000</ipp_se:I8480>
+  <ipp_se:I8485 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">202000</ipp_se:I8485>
+  <ipp_se:I8485 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">185000</ipp_se:I8485>
+  <ipp_se:I8470 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-111440000</ipp_se:I8470>
+  <ipp_se:I8470 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-98893000</ipp_se:I8470>
+  <ipp_se:I8471 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-94740000</ipp_se:I8471>
+  <ipp_se:I8471 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-88440000</ipp_se:I8471>
+  <ipp_se:I8475 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-12347000</ipp_se:I8475>
+  <ipp_se:I8475 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-10453000</ipp_se:I8475>
+  <ipp_se:I8477 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-4353000</ipp_se:I8477>
+  <ipp_se:I8492 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">39000</ipp_se:I8492>
+  <ipp_se:I8492 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">-4709000</ipp_se:I8492>
+  <ipp_se:I8495 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">-92664000</ipp_se:I8495>
+  <ipp_se:I8495 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">219573000</ipp_se:I8495>
+  <ipp_se:I8499 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">1256195000</ipp_se:I8499>
+  <ipp_se:I8499 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1036622000</ipp_se:I8499>
+  <ipp_se:I8500 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">1163531000</ipp_se:I8500>
+  <ipp_se:I8500 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1256195000</ipp_se:I8500>
+  <ipp_se:I8550 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">1160221000</ipp_se:I8550>
+  <ipp_se:I8550 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1252885000</ipp_se:I8550>
+  <ipp_se:I8552 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">3310000</ipp_se:I8552>
+  <ipp_se:I8552 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">3310000</ipp_se:I8552>
+  <ipp_se:I8600 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">1163531000</ipp_se:I8600>
+  <ipp_se:I8600 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">1256195000</ipp_se:I8600>
+  <ipp_se:I1435 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1435>
+  <ipp_se:I1435 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1435>
+  <ipp_se:I1410 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1410>
+  <ipp_se:I1410 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1410>
+  <ipp_se:I1431 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1431>
+  <ipp_se:I1431 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1431>
+  <ipp_se:I1460 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1460>
+  <ipp_se:I1460 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1460>
+  <ipp_se:I1450 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1450>
+  <ipp_se:I1450 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1450>
+  <ipp_se:I1440 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1440>
+  <ipp_se:I1440 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1440>
+  <ipp_se:I1490 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1490>
+  <ipp_se:I1490 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1490>
+  <ipp_se:I1480 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1480>
+  <ipp_se:I1480 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1480>
+  <ipp_se:I1470 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1470>
+  <ipp_se:I1470 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1470>
+  <ipp_se:I1495 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1495>
+  <ipp_se:I1495 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1495>
+  <ipp_se:I1500 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1500>
+  <ipp_se:I1500 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1500>
+  <ipp_se:I1600 unitRef="euro" decimals="-3" contextRef="Dcur_PeriodoActualMiembro">0</ipp_se:I1600>
+  <ipp_se:I1600 unitRef="euro" decimals="-3" contextRef="Dpre_PeriodoAnteriorMiembro">0</ipp_se:I1600>
+  <ipp_se:I2158 unitRef="euro" decimals="2" contextRef="Dcur_ImportePorAccionMiembro_PeriodoActualMiembro">0.82</ipp_se:I2158>
+  <ipp_se:I2158 unitRef="euro" decimals="-3" contextRef="Dcur_ImporteTotalMiembro_PeriodoActualMiembro">98688000</ipp_se:I2158>
+  <ipp_se:I2158 unitRef="euro" decimals="2" contextRef="Dpre_ImportePorAccionMiembro_PeriodoAnteriorMiembro">0.78</ipp_se:I2158>
+  <ipp_se:I2158 unitRef="euro" decimals="-3" contextRef="Dpre_ImporteTotalMiembro_PeriodoAnteriorMiembro">93012000</ipp_se:I2158>
+  <ipp_se:I2160 unitRef="euro" decimals="2" contextRef="Dcur_ImportePorAccionMiembro_PeriodoActualMiembro">0.82</ipp_se:I2160>
+  <ipp_se:I2160 unitRef="euro" decimals="-3" contextRef="Dcur_ImporteTotalMiembro_PeriodoActualMiembro">98688000</ipp_se:I2160>
+  <ipp_se:I2160 unitRef="euro" decimals="2" contextRef="Dpre_ImportePorAccionMiembro_PeriodoAnteriorMiembro">0.78</ipp_se:I2160>
+  <ipp_se:I2160 unitRef="euro" decimals="-3" contextRef="Dpre_ImporteTotalMiembro_PeriodoAnteriorMiembro">93012000</ipp_se:I2160>
+  <ipp_se:I2155 unitRef="euro" decimals="2" contextRef="Dcur_ImportePorAccionMiembro_PeriodoActualMiembro">0.82</ipp_se:I2155>
+  <ipp_se:I2155 unitRef="euro" decimals="-3" contextRef="Dcur_ImporteTotalMiembro_PeriodoActualMiembro">98688000</ipp_se:I2155>
+  <ipp_se:I2155 unitRef="euro" decimals="2" contextRef="Dpre_ImportePorAccionMiembro_PeriodoAnteriorMiembro">0.78</ipp_se:I2155>
+  <ipp_se:I2155 unitRef="euro" decimals="-3" contextRef="Dpre_ImporteTotalMiembro_PeriodoAnteriorMiembro">93012000</ipp_se:I2155>
+  <ipp_se:I2070 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">8864000</ipp_se:I2070>
+  <ipp_se:I2075 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I2075>
+  <ipp_se:I2075 unitRef="euro" decimals="-3" contextRef="Icur_OtrosActivosFinancierosVRCambiosPYGMiembro">0</ipp_se:I2075>
+  <ipp_se:I2075 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">0</ipp_se:I2075>
+  <ipp_se:I2075 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">8864000</ipp_se:I2075>
+  <ipp_se:I2075 unitRef="euro" decimals="-3" contextRef="Icur_InversionesMantenidasHastaVencimientoMiembro">0</ipp_se:I2075>
+  <ipp_se:I2162 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosMantenidosParaNegociarMiembro">29000</ipp_se:I2162>
+  <ipp_se:I2163 unitRef="euro" decimals="-3" contextRef="Icur_OtrosActivosFinancierosVRCambiosPYGMiembro">96000</ipp_se:I2163>
+  <ipp_se:I2163 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">1287736000</ipp_se:I2163>
+  <ipp_se:I2164 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">6615682000</ipp_se:I2164>
+  <ipp_se:I2166 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">119046000</ipp_se:I2166>
+  <ipp_se:I2167 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">202313000</ipp_se:I2167>
+  <ipp_se:I2167 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">468760000</ipp_se:I2167>
+  <ipp_se:I2168 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">407479000</ipp_se:I2168>
+  <ipp_se:I2169 unitRef="euro" decimals="-3" contextRef="Icur_OtrosActivosFinancierosVRCambiosPYGMiembro">340718000</ipp_se:I2169>
+  <ipp_se:I2169 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">21388000</ipp_se:I2169>
+  <ipp_se:I2170 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">404651000</ipp_se:I2170>
+  <ipp_se:I2175 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosMantenidosParaNegociarMiembro">29000</ipp_se:I2175>
+  <ipp_se:I2175 unitRef="euro" decimals="-3" contextRef="Icur_OtrosActivosFinancierosVRCambiosPYGMiembro">340814000</ipp_se:I2175>
+  <ipp_se:I2175 unitRef="euro" decimals="-3" contextRef="Icur_ActivosFinancierosDisponiblesParaVentaMiembro">8105731000</ipp_se:I2175>
+  <ipp_se:I2175 unitRef="euro" decimals="-3" contextRef="Icur_PrestamosPartidasCobrarMiembro">1421324000</ipp_se:I2175>
+  <ipp_se:I2175 unitRef="euro" decimals="-3" contextRef="Icur_InversionesMantenidasHastaVencimientoMiembro">0</ipp_se:I2175>
+  <ipp_se:I2084 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">208154000</ipp_se:I2084>
+  <ipp_se:I2090 unitRef="euro" decimals="-3" contextRef="Icur_PasivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I2090>
+  <ipp_se:I2090 unitRef="euro" decimals="-3" contextRef="Icur_OtrosPasivosFinancierosVRCambiosPyGMiembro">0</ipp_se:I2090>
+  <ipp_se:I2090 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">208154000</ipp_se:I2090>
+  <ipp_se:I2177 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">200439000</ipp_se:I2177>
+  <ipp_se:I2179 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">52753000</ipp_se:I2179>
+  <ipp_se:I2180 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">234047000</ipp_se:I2180>
+  <ipp_se:I2182 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">2012000</ipp_se:I2182>
+  <ipp_se:I2184 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">381386000</ipp_se:I2184>
+  <ipp_se:I2190 unitRef="euro" decimals="-3" contextRef="Icur_PasivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I2190>
+  <ipp_se:I2190 unitRef="euro" decimals="-3" contextRef="Icur_OtrosPasivosFinancierosVRCambiosPyGMiembro">0</ipp_se:I2190>
+  <ipp_se:I2190 unitRef="euro" decimals="-3" contextRef="Icur_DebitosPartidasPagarMiembro">870637000</ipp_se:I2190>
+  <ipp_se:I5070 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">7373000</ipp_se:I5070>
+  <ipp_se:I5075 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I5075>
+  <ipp_se:I5075 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">0</ipp_se:I5075>
+  <ipp_se:I5075 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">0</ipp_se:I5075>
+  <ipp_se:I5075 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">7373000</ipp_se:I5075>
+  <ipp_se:I5075 unitRef="euro" decimals="-3" contextRef="Ipre_InversionesMantenidasHastaVencimientoMiembro">0</ipp_se:I5075>
+  <ipp_se:I5162 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosMantenidosParaNegociarMiembro">27000</ipp_se:I5162>
+  <ipp_se:I5163 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">7698000</ipp_se:I5163>
+  <ipp_se:I5163 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">1434544000</ipp_se:I5163>
+  <ipp_se:I5164 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">33786000</ipp_se:I5164>
+  <ipp_se:I5164 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">6522649000</ipp_se:I5164>
+  <ipp_se:I5166 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">80000</ipp_se:I5166>
+  <ipp_se:I5166 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">99312000</ipp_se:I5166>
+  <ipp_se:I5167 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">190914000</ipp_se:I5167>
+  <ipp_se:I5167 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">220937000</ipp_se:I5167>
+  <ipp_se:I5168 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">405462000</ipp_se:I5168>
+  <ipp_se:I5169 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">339097000</ipp_se:I5169>
+  <ipp_se:I5169 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">17736000</ipp_se:I5169>
+  <ipp_se:I5170 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">417849000</ipp_se:I5170>
+  <ipp_se:I5175 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosMantenidosParaNegociarMiembro">27000</ipp_se:I5175>
+  <ipp_se:I5175 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosActivosFinancierosVRCambiosPYGMiembro">380581000</ipp_se:I5175>
+  <ipp_se:I5175 unitRef="euro" decimals="-3" contextRef="Ipre_ActivosFinancierosDisponiblesParaVentaMiembro">8148187000</ipp_se:I5175>
+  <ipp_se:I5175 unitRef="euro" decimals="-3" contextRef="Ipre_PrestamosPartidasCobrarMiembro">1161296000</ipp_se:I5175>
+  <ipp_se:I5175 unitRef="euro" decimals="-3" contextRef="Ipre_InversionesMantenidasHastaVencimientoMiembro">0</ipp_se:I5175>
+  <ipp_se:I5084 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">292612000</ipp_se:I5084>
+  <ipp_se:I5090 unitRef="euro" decimals="-3" contextRef="Ipre_PasivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I5090>
+  <ipp_se:I5090 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosPasivosFinancierosVRCambiosPyGMiembro">0</ipp_se:I5090>
+  <ipp_se:I5090 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">292612000</ipp_se:I5090>
+  <ipp_se:I5177 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">200266000</ipp_se:I5177>
+  <ipp_se:I5179 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">57734000</ipp_se:I5179>
+  <ipp_se:I5180 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">211273000</ipp_se:I5180>
+  <ipp_se:I5182 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">7494000</ipp_se:I5182>
+  <ipp_se:I5184 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">347660000</ipp_se:I5184>
+  <ipp_se:I5190 unitRef="euro" decimals="-3" contextRef="Ipre_PasivosFinancierosMantenidosParaNegociarMiembro">0</ipp_se:I5190>
+  <ipp_se:I5190 unitRef="euro" decimals="-3" contextRef="Ipre_OtrosPasivosFinancierosVRCambiosPyGMiembro">0</ipp_se:I5190>
+  <ipp_se:I5190 unitRef="euro" decimals="-3" contextRef="Ipre_DebitosPartidasPagarMiembro">824427000</ipp_se:I5190>
+  <ipp_se:I2210 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">2603047000</ipp_se:I2210>
+  <ipp_se:I2210 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">2569877000</ipp_se:I2210>
+  <ipp_se:I2215 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaIndividualMiembro_PeriodoActualMiembro">0</ipp_se:I2215>
+  <ipp_se:I2215 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaIndividualMiembro_PeriodoAnteriorMiembro">0</ipp_se:I2215>
+  <ipp_se:I2215 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">810933000</ipp_se:I2215>
+  <ipp_se:I2215 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">759445000</ipp_se:I2215>
+  <ipp_se:I2216 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaIndividualMiembro_PeriodoActualMiembro">0</ipp_se:I2216>
+  <ipp_se:I2216 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaIndividualMiembro_PeriodoAnteriorMiembro">0</ipp_se:I2216>
+  <ipp_se:I2216 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">613650000</ipp_se:I2216>
+  <ipp_se:I2216 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">579116000</ipp_se:I2216>
+  <ipp_se:I2217 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">543349000</ipp_se:I2217>
+  <ipp_se:I2217 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">518706000</ipp_se:I2217>
+  <ipp_se:I2218 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">70301000</ipp_se:I2218>
+  <ipp_se:I2218 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">60410000</ipp_se:I2218>
+  <ipp_se:I2219 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">197283000</ipp_se:I2219>
+  <ipp_se:I2219 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">180329000</ipp_se:I2219>
+  <ipp_se:I2220 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaIndividualMiembro_PeriodoActualMiembro">0</ipp_se:I2220>
+  <ipp_se:I2220 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaIndividualMiembro_PeriodoAnteriorMiembro">0</ipp_se:I2220>
+  <ipp_se:I2220 unitRef="euro" decimals="-3" contextRef="Icur_AreaGeograficaConsolidadoMiembro_PeriodoActualMiembro">3413980000</ipp_se:I2220>
+  <ipp_se:I2220 unitRef="euro" decimals="-3" contextRef="Ipre_AreaGeograficaConsolidadoMiembro_PeriodoAnteriorMiembro">3329322000</ipp_se:I2220>
+  <ipp_se:I2221 contextRef="Icur_SegmentoslMiembro">NO VIDA</ipp_se:I2221>
+  <ipp_se:I2221 contextRef="Icur_IngresosOrdinariosPeriodoActualMiembro">3530314000</ipp_se:I2221>
+  <ipp_se:I2221 contextRef="Ipre_IngresosOrdinariosPeriodoAnteriorMiembro">3426916000</ipp_se:I2221>
+  <ipp_se:I2221 contextRef="Icur_ResultadoPeriodoActualMiembro">498009000</ipp_se:I2221>
+  <ipp_se:I2221 contextRef="Ipre_ResultadoPeriodoAnteriorMiembro">487711000</ipp_se:I2221>
+  <ipp_se:I2222 contextRef="Icur_SegmentoslMiembro">VIDA</ipp_se:I2222>
+  <ipp_se:I2222 contextRef="Icur_IngresosOrdinariosPeriodoActualMiembro">750086000</ipp_se:I2222>
+  <ipp_se:I2222 contextRef="Ipre_IngresosOrdinariosPeriodoAnteriorMiembro">761789000</ipp_se:I2222>
+  <ipp_se:I2222 contextRef="Icur_ResultadoPeriodoActualMiembro">59164000</ipp_se:I2222>
+  <ipp_se:I2222 contextRef="Ipre_ResultadoPeriodoAnteriorMiembro">43841000</ipp_se:I2222>
+  <ipp_se:I2223 contextRef="Icur_SegmentoslMiembro">OTRAS ACTIVIDADES</ipp_se:I2223>
+  <ipp_se:I2223 contextRef="Icur_IngresosOrdinariosPeriodoActualMiembro">24628000</ipp_se:I2223>
+  <ipp_se:I2223 contextRef="Ipre_IngresosOrdinariosPeriodoAnteriorMiembro">26417000</ipp_se:I2223>
+  <ipp_se:I2223 contextRef="Icur_ResultadoPeriodoActualMiembro">-34399000</ipp_se:I2223>
+  <ipp_se:I2223 contextRef="Ipre_ResultadoPeriodoAnteriorMiembro">-56089000</ipp_se:I2223>
+  <ipp_se:I2235 unitRef="euro" decimals="-3" contextRef="Icur_IngresosOrdinariosPeriodoActualMiembro">4305028000</ipp_se:I2235>
+  <ipp_se:I2235 unitRef="euro" decimals="-3" contextRef="Ipre_IngresosOrdinariosPeriodoAnteriorMiembro">4215122000</ipp_se:I2235>
+  <ipp_se:I2235 unitRef="euro" decimals="-3" contextRef="Icur_ResultadoPeriodoActualMiembro">522774000</ipp_se:I2235>
+  <ipp_se:I2235 unitRef="euro" decimals="-3" contextRef="Ipre_ResultadoPeriodoAnteriorMiembro">475463000</ipp_se:I2235>
+  <ipp_se:I2295 unitRef="euro" decimals="0" contextRef="Icur_IndividualMiembro_PeriodoActualMiembro">74</ipp_se:I2295>
+  <ipp_se:I2295 unitRef="euro" decimals="0" contextRef="Ipre_IndividualMiembro_PeriodoAnteriorMiembro">52</ipp_se:I2295>
+  <ipp_se:I2295 unitRef="euro" decimals="0" contextRef="Icur_ConsolidadoMiembro_PeriodoActualMiembro">7389</ipp_se:I2295>
+  <ipp_se:I2295 unitRef="euro" decimals="0" contextRef="Ipre_ConsolidadoMiembro_PeriodoAnteriorMiembro">7352</ipp_se:I2295>
+  <ipp_se:I2296 unitRef="euro" decimals="0" contextRef="Icur_IndividualMiembro_PeriodoActualMiembro">32</ipp_se:I2296>
+  <ipp_se:I2296 unitRef="euro" decimals="0" contextRef="Ipre_IndividualMiembro_PeriodoAnteriorMiembro">22</ipp_se:I2296>
+  <ipp_se:I2296 unitRef="euro" decimals="0" contextRef="Icur_ConsolidadoMiembro_PeriodoActualMiembro">3918</ipp_se:I2296>
+  <ipp_se:I2296 unitRef="euro" decimals="0" contextRef="Ipre_ConsolidadoMiembro_PeriodoAnteriorMiembro">3920</ipp_se:I2296>
+  <ipp_se:I2297 unitRef="euro" decimals="0" contextRef="Icur_IndividualMiembro_PeriodoActualMiembro">42</ipp_se:I2297>
+  <ipp_se:I2297 unitRef="euro" decimals="0" contextRef="Ipre_IndividualMiembro_PeriodoAnteriorMiembro">30</ipp_se:I2297>
+  <ipp_se:I2297 unitRef="euro" decimals="0" contextRef="Icur_ConsolidadoMiembro_PeriodoActualMiembro">3471</ipp_se:I2297>
+  <ipp_se:I2297 unitRef="euro" decimals="0" contextRef="Ipre_ConsolidadoMiembro_PeriodoAnteriorMiembro">3432</ipp_se:I2297>
+  <ipp_se:I2310 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">3386000</ipp_se:I2310>
+  <ipp_se:I2310 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">3386000</ipp_se:I2310>
+  <ipp_se:I2311 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">1737000</ipp_se:I2311>
+  <ipp_se:I2311 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">1809000</ipp_se:I2311>
+  <ipp_se:I2312 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">330000</ipp_se:I2312>
+  <ipp_se:I2312 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">326000</ipp_se:I2312>
+  <ipp_se:I2315 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">378000</ipp_se:I2315>
+  <ipp_se:I2315 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">345000</ipp_se:I2315>
+  <ipp_se:I2316 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">685000</ipp_se:I2316>
+  <ipp_se:I2316 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">726000</ipp_se:I2316>
+  <ipp_se:I2320 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">6516000</ipp_se:I2320>
+  <ipp_se:I2320 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">6592000</ipp_se:I2320>
+  <ipp_se:I2325 unitRef="euro" decimals="-3" contextRef="Dcur_Importe_PeriodoActualMiembro">2699000</ipp_se:I2325>
+  <ipp_se:I2325 unitRef="euro" decimals="-3" contextRef="Dpre_Importe_PeriodoAnteriorMiembro">2644000</ipp_se:I2325>
+  <ipp_se:I2340 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">5171000</ipp_se:I2340>
+  <ipp_se:I2340 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">5171000</ipp_se:I2340>
+  <ipp_se:I2343 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2343>
+  <ipp_se:I2344 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">68676000</ipp_se:I2344>
+  <ipp_se:I2344 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">68676000</ipp_se:I2344>
+  <ipp_se:I2345 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2345>
+  <ipp_se:I2348 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2348>
+  <ipp_se:I2350 unitRef="euro" decimals="-3" contextRef="Dcur_AccionistasSignificativosMiembro">0</ipp_se:I2350>
+  <ipp_se:I2350 unitRef="euro" decimals="-3" contextRef="Dcur_AdministradoresDirectivosMiembro">0</ipp_se:I2350>
+  <ipp_se:I2350 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">73847000</ipp_se:I2350>
+  <ipp_se:I2350 unitRef="euro" decimals="-3" contextRef="Dcur_OtrasPartesVinculadasMiembro">0</ipp_se:I2350>
+  <ipp_se:I2350 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">73847000</ipp_se:I2350>
+  <ipp_se:I2351 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2351>
+  <ipp_se:I2354 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">194065000</ipp_se:I2354>
+  <ipp_se:I2354 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">194065000</ipp_se:I2354>
+  <ipp_se:I2356 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">19410000</ipp_se:I2356>
+  <ipp_se:I2356 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">19410000</ipp_se:I2356>
+  <ipp_se:I2357 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2357>
+  <ipp_se:I2359 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2359>
+  <ipp_se:I2360 unitRef="euro" decimals="-3" contextRef="Dcur_AccionistasSignificativosMiembro">0</ipp_se:I2360>
+  <ipp_se:I2360 unitRef="euro" decimals="-3" contextRef="Dcur_AdministradoresDirectivosMiembro">0</ipp_se:I2360>
+  <ipp_se:I2360 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">213475000</ipp_se:I2360>
+  <ipp_se:I2360 unitRef="euro" decimals="-3" contextRef="Dcur_OtrasPartesVinculadasMiembro">0</ipp_se:I2360>
+  <ipp_se:I2360 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">213475000</ipp_se:I2360>
+  <ipp_se:I2372 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2372>
+  <ipp_se:I2375 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2375>
+  <ipp_se:I2381 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2381>
+  <ipp_se:I2382 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2382>
+  <ipp_se:I2383 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2383>
+  <ipp_se:I2386 unitRef="euro" decimals="-3" contextRef="Dcur_AccionistasSignificativosMiembro">57678000</ipp_se:I2386>
+  <ipp_se:I2386 unitRef="euro" decimals="-3" contextRef="Dcur_AdministradoresDirectivosMiembro">3076000</ipp_se:I2386>
+  <ipp_se:I2386 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">60754000</ipp_se:I2386>
+  <ipp_se:I2385 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2385>
+  <ipp_se:I2341 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2341>
+  <ipp_se:I2342 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2342>
+  <ipp_se:I2346 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">21551000</ipp_se:I2346>
+  <ipp_se:I2346 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">21551000</ipp_se:I2346>
+  <ipp_se:I2347 unitRef="euro" decimals="-3" contextRef="Dcur_AccionistasSignificativosMiembro">0</ipp_se:I2347>
+  <ipp_se:I2347 unitRef="euro" decimals="-3" contextRef="Dcur_AdministradoresDirectivosMiembro">0</ipp_se:I2347>
+  <ipp_se:I2347 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">21551000</ipp_se:I2347>
+  <ipp_se:I2347 unitRef="euro" decimals="-3" contextRef="Dcur_OtrasPartesVinculadasMiembro">0</ipp_se:I2347>
+  <ipp_se:I2347 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">21551000</ipp_se:I2347>
+  <ipp_se:I2352 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">0</ipp_se:I2352>
+  <ipp_se:I2353 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">190048000</ipp_se:I2353>
+  <ipp_se:I2353 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">190048000</ipp_se:I2353>
+  <ipp_se:I2355 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">9336000</ipp_se:I2355>
+  <ipp_se:I2355 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">9336000</ipp_se:I2355>
+  <ipp_se:I2358 unitRef="euro" decimals="-3" contextRef="Dcur_AccionistasSignificativosMiembro">0</ipp_se:I2358>
+  <ipp_se:I2358 unitRef="euro" decimals="-3" contextRef="Dcur_AdministradoresDirectivosMiembro">0</ipp_se:I2358>
+  <ipp_se:I2358 unitRef="euro" decimals="-3" contextRef="Dcur_PersonasSociedadesEntidadesGrupoMiembro">199384000</ipp_se:I2358>
+  <ipp_se:I2358 unitRef="euro" decimals="-3" contextRef="Dcur_OtrasPartesVinculadasMiembro">0</ipp_se:I2358>
+  <ipp_se:I2358 unitRef="euro" decimals="-3" contextRef="Dcur_TotalMiembro">199384000</ipp_se:I2358>
+  <ipp_se:I6340 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">6706000</ipp_se:I6340>
+  <ipp_se:I6340 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">6706000</ipp_se:I6340>
+  <ipp_se:I6343 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6343>
+  <ipp_se:I6344 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">68395000</ipp_se:I6344>
+  <ipp_se:I6344 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">68395000</ipp_se:I6344>
+  <ipp_se:I6345 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6345>
+  <ipp_se:I6348 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6348>
+  <ipp_se:I6350 unitRef="euro" decimals="-3" contextRef="Dpre_AccionistasSignificativosMiembro">0</ipp_se:I6350>
+  <ipp_se:I6350 unitRef="euro" decimals="-3" contextRef="Dpre_AdministradoresDirectivosMiembro">0</ipp_se:I6350>
+  <ipp_se:I6350 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">75101000</ipp_se:I6350>
+  <ipp_se:I6350 unitRef="euro" decimals="-3" contextRef="Dpre_OtrasPartesVinculadasMiembro">0</ipp_se:I6350>
+  <ipp_se:I6350 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">75101000</ipp_se:I6350>
+  <ipp_se:I6351 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6351>
+  <ipp_se:I6354 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">158263000</ipp_se:I6354>
+  <ipp_se:I6354 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">158263000</ipp_se:I6354>
+  <ipp_se:I6356 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">16259000</ipp_se:I6356>
+  <ipp_se:I6356 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">16259000</ipp_se:I6356>
+  <ipp_se:I6357 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6357>
+  <ipp_se:I6359 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6359>
+  <ipp_se:I6360 unitRef="euro" decimals="-3" contextRef="Dpre_AccionistasSignificativosMiembro">0</ipp_se:I6360>
+  <ipp_se:I6360 unitRef="euro" decimals="-3" contextRef="Dpre_AdministradoresDirectivosMiembro">0</ipp_se:I6360>
+  <ipp_se:I6360 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">174522000</ipp_se:I6360>
+  <ipp_se:I6360 unitRef="euro" decimals="-3" contextRef="Dpre_OtrasPartesVinculadasMiembro">0</ipp_se:I6360>
+  <ipp_se:I6360 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">174522000</ipp_se:I6360>
+  <ipp_se:I6372 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6372>
+  <ipp_se:I6375 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6375>
+  <ipp_se:I6381 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6381>
+  <ipp_se:I6382 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6382>
+  <ipp_se:I6383 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6383>
+  <ipp_se:I6386 unitRef="euro" decimals="-3" contextRef="Dpre_AccionistasSignificativosMiembro">54875000</ipp_se:I6386>
+  <ipp_se:I6386 unitRef="euro" decimals="-3" contextRef="Dpre_AdministradoresDirectivosMiembro">2575000</ipp_se:I6386>
+  <ipp_se:I6386 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">57450000</ipp_se:I6386>
+  <ipp_se:I6385 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6385>
+  <ipp_se:I6341 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6341>
+  <ipp_se:I6342 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6342>
+  <ipp_se:I6346 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">35687000</ipp_se:I6346>
+  <ipp_se:I6346 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">35687000</ipp_se:I6346>
+  <ipp_se:I6347 unitRef="euro" decimals="-3" contextRef="Dpre_AccionistasSignificativosMiembro">0</ipp_se:I6347>
+  <ipp_se:I6347 unitRef="euro" decimals="-3" contextRef="Dpre_AdministradoresDirectivosMiembro">0</ipp_se:I6347>
+  <ipp_se:I6347 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">35687000</ipp_se:I6347>
+  <ipp_se:I6347 unitRef="euro" decimals="-3" contextRef="Dpre_OtrasPartesVinculadasMiembro">0</ipp_se:I6347>
+  <ipp_se:I6347 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">35687000</ipp_se:I6347>
+  <ipp_se:I6352 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">0</ipp_se:I6352>
+  <ipp_se:I6353 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">258213000</ipp_se:I6353>
+  <ipp_se:I6353 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">258213000</ipp_se:I6353>
+  <ipp_se:I6355 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">49054000</ipp_se:I6355>
+  <ipp_se:I6355 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">49054000</ipp_se:I6355>
+  <ipp_se:I6358 unitRef="euro" decimals="-3" contextRef="Dpre_AccionistasSignificativosMiembro">0</ipp_se:I6358>
+  <ipp_se:I6358 unitRef="euro" decimals="-3" contextRef="Dpre_AdministradoresDirectivosMiembro">0</ipp_se:I6358>
+  <ipp_se:I6358 unitRef="euro" decimals="-3" contextRef="Dpre_PersonasSociedadesEntidadesGrupoMiembro">307267000</ipp_se:I6358>
+  <ipp_se:I6358 unitRef="euro" decimals="-3" contextRef="Dpre_OtrasPartesVinculadasMiembro">0</ipp_se:I6358>
+  <ipp_se:I6358 unitRef="euro" decimals="-3" contextRef="Dpre_TotalMiembro">307267000</ipp_se:I6358>
+</xbrli:xbrl>

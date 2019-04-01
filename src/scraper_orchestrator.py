@@ -24,6 +24,7 @@ class ScraperOrchestrator():
         try:
             # Establecer ubicación salida de datos csv
             self.csv_data_dir = csv_data_dir
+            self.xbrl_extract_dir = wsPreferences['xbrl_extract_dir']
             # Inicializar el Web Scraper
             self.webScraper = WebScraper(wsPreferences)
             # Inicializar clase de utilidades
@@ -32,7 +33,7 @@ class ScraperOrchestrator():
             traceback.print_exc()          
             raise Exception('Error ScraperOrchestrator.__init__.') 
         
-    def run(self, sectorDictionary, periods, xbrlPropertiesList, xbrlContext):
+    def run(self, sectorDictionary, periods, xbrlPropertiesMap):
         """ Metodo que lleva a cabo la ejecución del proceso de scraping y posterior extracción y 
         construcción de los data sets.
         Para ello llevará a cabo los siguientes pasos:
@@ -57,16 +58,15 @@ class ScraperOrchestrator():
             (Más detalles en la documentación de la clase WebScraper)
         periods: [int, ..], mandatory
             Lista de años que identifican los periodos financieros aplicables
-        xbrlPropertiesList: list, mandatory
-            Lista de propiedades a ser extraidas de los ficheros xbrl
-        xbrlContext: str, mandatory
-            Identificador del contexto aplicable a las propiedades a ser extraidas
+        xbrlPropertiesMap: dictionary, mandatory
+            Mapa de propiedades a ser extraidas de los ficheros xbrl, la clave indica el tag del elemento
+            xbrl, y el valor el contexto aplicable a dicho elemento
         """         
         try:
             # Carga de datos por sector y periodo
             self.__scraping(sectorDictionary, periods)
             # Extracción xbrl properties
-            self.extracting(xbrlPropertiesList, xbrlContext)
+            self.extracting(xbrlPropertiesMap)
         except Exception:
             traceback.print_exc()          
             raise Exception('Error ScraperOrchestrator.__init__.') 
@@ -103,15 +103,14 @@ class ScraperOrchestrator():
             raise Exception('Error ScraperOrchestrator.__scraping.')             
        
         
-    def extracting(self, xbrlPropertiesList, xbrlContext):
+    def extracting(self, xbrlPropertiesMap):
         """ Ejecuta la extracción y posterior creación del dataset con las propiedades requeridas de los 
             ficheros xbrl.
         Parameters
         ----------
-        xbrlPropertiesList: list, mandatory
-            Lista de propiedades a ser extraidas de los ficheros xbrl
-        xbrlContext: str, mandatory
-            Identificador del contexto aplicable a las propiedades a ser extraidas
+        xbrlPropertiesMap: dictionary, mandatory
+            Mapa de propiedades a ser extraidas de los ficheros xbrl, la clave indica el tag del elemento
+            xbrl, y el valor el contexto aplicable a dicho elemento
         """ 
         try:
             pathIndexReports = self.__get_indexIppReportsPath();
@@ -124,10 +123,11 @@ class ScraperOrchestrator():
                     line_count += 1
                 else:
                     pathXbrlFile = row[6]
+                    pathXbrlFile = pathXbrlFile.replace("<repositoryPath>", self.xbrl_extract_dir)
                     print(f'\tExtracting xbrl file: {row[6]}.')
                     outputrow = row
                     xbrlParser = XbrlParser(pathXbrlFile)
-                    for prop in xbrlPropertiesList:
+                    for prop, xbrlContext in xbrlPropertiesMap.items():
                         valuePropertie = xbrlParser.get(prop, xbrlContext)
                         outputrow.append(valuePropertie)
                     ouputArray.append(outputrow)   
@@ -136,7 +136,7 @@ class ScraperOrchestrator():
             # - Añade una línea de cabecera
             pathProperiesIPPXbrl = self.__get_propertiesIPPXbrlPath()
             self.utils.deleteIfExist(pathProperiesIPPXbrl)
-            header = self.__get_indexIppReportsHeader() + xbrlPropertiesList
+            header = self.__get_indexIppReportsHeader() + list(xbrlPropertiesMap.keys())
             self.utils.write2DArrayToCsv(twoDimensionArray=[header], 
                                         file_csv_path=pathProperiesIPPXbrl, delimiter=';')                     
             self.utils.write2DArrayToCsv(twoDimensionArray=ouputArray, file_csv_path=pathProperiesIPPXbrl, delimiter=';') 

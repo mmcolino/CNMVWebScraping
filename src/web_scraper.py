@@ -14,6 +14,7 @@ from selenium.common.exceptions import TimeoutException
 from utils import Utils
 import traceback
 import os
+import time
 
 # Inicializar elementos requeridos
 utils = Utils()
@@ -217,16 +218,8 @@ class WebScraper():
                     data = self.__process_result_table_data(result_data, sectorId, sectorDictionary)
                     result = data
                    
-                    # Recuperamos la lista de páginas (en caso de que exista más de una página de
-                    # resultado)
-                    pages = self.driver.find_elements_by_xpath(".//a[contains(@href,'Page')]") 
-                    # Para cada páginad de resultados adicional                    
-                    for page in pages:
-                        print("   * Process page: "+page.text)
-                        page.click()
-                        result_data = self.__get_elment_byid("wDescargas_Listado_gridInformes", 5)  
-                        data = self.__process_result_table_data(result_data, sectorId, sectorDictionary)
-                        result = result + data
+                    # Si existen varias páginas de resultado se procesan
+                    result = self.__load_navigation_pages(1, result, sectorId, sectorDictionary)
                 else:
                     # si no se ha logrado descargar y descomprimir los ficheros xbrl se retorna
                     # False indicando que la extracción de los datos del sector y periodo no ha
@@ -240,6 +233,39 @@ class WebScraper():
         except Exception:
             traceback.print_exc()            
             raise Exception('Error en WebScraper.__process_result.')
+
+    def __load_navigation_pages(self, prev_numpage, data_actual, sectorId, sectorDictionary):
+        """ Recuperamos la lista de páginas (en caso de que exista más de una página de
+            resultado)
+        """
+        try:
+            pages = self.driver.find_elements_by_xpath(".//a[contains(@href,'Page')]") 
+            # Para cada páginad de resultados adicional
+            # - Me posiciono en la siguiente página a tratar
+            for page in pages:
+                numpage= int(page.text)
+                if(numpage > prev_numpage):
+                    break
+            # en caso de que existan páginas trato la siguiente
+            if(len(pages) > 0): 
+                # impedir bucles infinitos repitiendo mismas páginas
+                if(numpage < prev_numpage):
+                    return data_actual
+                print("   * Process page: "+page.text)
+                page.click()
+                result_data = self.__get_elment_byid("wDescargas_Listado_gridInformes", 5)  
+                data = self.__process_result_table_data(result_data, sectorId, sectorDictionary)
+                data_actual = data_actual + data     
+            if(len(pages) > 1):
+                # entre página y página, hacemos un wait para no saturar el servidor web de la cnmv
+                time.sleep(self.xbrl_download_time_to_wait)
+                return self.__load_navigation_pages(numpage, data_actual, sectorId, sectorDictionary)
+            else:
+                return data_actual
+                
+        except Exception:
+            traceback.print_exc()            
+            raise Exception('Error en WebScraper.__load_navigation_pages.')
             
     def __decompress_ipp_xbrl_data(self):
         """ Realiza la decompresión de los ficheros .zip con los informes IPP xbrl descargados,
@@ -312,7 +338,8 @@ class WebScraper():
                     # para componer el path al mismo
                     colnum = colnum+1
                     if(colnum == 4):
-                        xbrlPath = self.xbrl_extract_dir + '/' + col.text +'.xbrl'
+                        xbrlPath = '<repositoryPath>/' + col.text +'.xbrl'
+                        #xbrlPath = self.xbrl_extract_dir + '/' + col.text +'.xbrl'
 
                     # sabemos que no hay más de 6 campos de utilidad, ignoramos posibles columnas adicionales
                     if(colnum == 6):
@@ -357,7 +384,7 @@ class WebScraper():
             if(modeError == 'raise'):
                 raise Exception('Error WebScrapper.__get_elment_byid.')
             return False
- 
+        
     def __reset_download_dir(self):
         """ Resetea el el directorio de descarga, para asegurarse un procesado limpio
             y evitar mezclas con datos que pudieron quedarse sin procesar en alguna descarga previa"""

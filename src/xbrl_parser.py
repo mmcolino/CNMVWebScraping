@@ -46,7 +46,6 @@ class XbrlParser:
             for tag in tag_list:
                 if(tag.name == tag_name and tag['contextRef'] == contextRef):
                     value = tag.text
-                    print(value)
                     return value
         except Exception:
             traceback.print_exc()

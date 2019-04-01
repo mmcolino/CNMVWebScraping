@@ -27,7 +27,9 @@ El presente repositorio define la siguiente estructura de directorios y ficheros
     * *download*: Ubicación donde serán descargados los ficheros zip con paquetes de informes xbrl.
     * *ipp-xbrl*: Ubicación donde se persistirán los ficheros xbrl.
     * *csv*: Ubicación donde se persistirán los datasets generados:
-        - *indexIPPXbrlReports.csv*: Dataset con los datos generales y de indexación de los ficheros xbrl descargados
+        - *indexIPPXbrlReports.csv*: Dataset con los datos generales y de indexación de los ficheros xbrl descargados.
+                                     De cara a hacer uso de estos datos, se ha de considerar que la el base path del repositorio donde se encuentran los ficheros xbrl será denotado como <repositoryPath> en este fichero, por lo tanto a la hora de hacer uso de esta información, deberá reemplazarse dicho valor por el path base que haya sido configurado en la extracción.
+                                     De esta forma se facilita la flexibilidad en la persistencia y posterior uso del repositorio de ficheros xbrl.
         - *statementsIPPXbrlReports.csv*: Dataset con los datos extraidos de los xbrl.
 
 - **doc**: Contenedor documento con el enunciado de la práctica y respuestas a las cuestiones planteadas.
@@ -93,15 +95,22 @@ Además, previo a su ejecución, se deberá revisar y ajustar la configuración 
     * *periods*: configuración de periodos para los que descargar datos
 
 - **Configuración de la extracción de datos** (ver info para configuración en [IPP Taxonomy](https://www.xbrl.es/informacion/ipp.html))
-    * *xbrlPropertiesList*: lista de propiedades xbrl
-    * *xbrlContext*: constexto asociado a las propiedades a ser extraidas
+    * *xbrlPropertiesMap*: mapa de propiedades xbrl, donde la key será el nombre del elemento xbrl, y el value el contexto aplicable a dicho elemento
     
 Estas propiedades pueden ser encontradas dentro de fichero *src/main.py*
 
 Una vez configurado el scraping podrá llevarse a cabo la ejecución mediante la ejecución del comando:
 ```
-python main.py
+python main.py --mode total
 ```
+Para una ejecución completa del web scraping y extracción de propiedades xbrl.
+
+Y de la siguiente forma:
+```
+python main.py --mode xbrlExtract
+```
+Para llevar a cabo únicamente la ejecución del proceso de extracción de propiedades xbrl.
+Esto será útil cuando se haya realizado previamente una descarga y lo único que se desee es extraer nuevas propiedades xbrl sobre los datos ya descargados.
 
 ## Referencias
 
