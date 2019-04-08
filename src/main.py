@@ -2,6 +2,8 @@
 from scraper_orchestrator import ScraperOrchestrator
 import traceback
 import argparse
+import urllib.robotparser
+import sys
 
 # Configurar el scraping de datos
 # - Conjunto de sectores para los que nos interesa realizar la descarga de datos
@@ -65,12 +67,15 @@ try:
     # Obtener argumentos command line
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", help="Enter execution mode: total / xbrlExtract")
+    parser.add_argument("--evalrobot", help="Enter execution mode: True / False")
     args = parser.parse_args()
     mode = args.mode
+    evalrobot = args.evalrobot
     
     # Inicializar el orquestador de scraping de datos
     wsPreferences = {'selenium_firefox_path' : 'C:/Program Files/Mozilla Firefox/Firefox.exe',
                      'selenium_firefox_driver' : 'C:/Users/Marimar/Anaconda3/Lib/site-packages/selenium/webdriver/geckodriver-v0.24.0-win64/geckodriver.exe',
+                     'selenium_user_agent_comment': 'educationalWebScraping',
                      'xbrl_ipp_url': 'http://www.cnmv.es/ipps',
                      'xbrl_download_dir' : 'F:\CNMV-IPPWebScraping\data\download',
                      'xbrl_extract_dir' : 'F:\CNMV-IPPWebScraping\data\ipp-xbrl',
@@ -81,6 +86,18 @@ try:
     csv_data_dir = 'F:\CNMV-IPPWebScraping\data\csv'
         
     scraperOrchestator = ScraperOrchestrator(wsPreferences, csv_data_dir)
+
+    # evaluar fichero robot para determinar si está permitido el scraping
+    if bool(evalrobot) == True:
+        # Instanciar robot parser
+        rp = urllib.robotparser.RobotFileParser()
+        rp.set_url("http://www.cnmv.es/robots.txt")
+        rp.read()
+        allowScraping = rp.can_fetch("*", "http://www.cnmv.es/ipps")
+        if allowScraping == False:
+            print('El scraping para "http://www.cnmv.es/ipps" no está permitido.')
+            sys.exit()
+
 
     # Evaluar el modo de ejecución        
     if mode == None or mode == "total":

@@ -56,7 +56,7 @@ Por lo tanto:
 
 - Se contará con la flexibilidad para configurar la extracción de datos de los xbrl:
     * Propiedad / propiedades.     
-    * Contexto.
+    * Contexto asociado a cada propiedad.
 
 ## Consideraciones de instalación y ejecución
 
@@ -74,7 +74,10 @@ Además, previo a su ejecución, se deberá revisar y ajustar la configuración 
 - **Configuración web driver**
     - *selenium\_firefox\_path*: Configurarion para el driver firefox, indica la ruta al ejecutable de Firefox
     * *selenium\_firefox\_driver*: Configurarion para el driver firefox, indica la ruta al driver de Selenium para Firefox
-
+    * *selenium_user_agent_comment*: Configuracón de comentario a incluir al final del user agent establecedio por el cliente web Firefox.
+       El objetivo de este parámetro es meramente informativo, tratamos de añadir algún dato que permita identificar a nuestro web scraping, para facilitar las tareas de control del site para el cual se está realizando el web scraping.
+       (*Nota*: Si estuieramos usando directamente algúna librería de phyton como *urllib2*, esta librería incluiría un User agent por defencto como "Python-urllib/3.0", existen *sites* donde bloquean a los robots que usan UserAgent por defecto, en estos casos es de especial relevancia incluir un valor específico en este parámetro.)
+                         
 - **Configuración persistencia descarga de ficheros IPP xbrl**
     * *xbrl\_ipp\_url*: Url donde se encuentran los informes ipp xbrl publicados por la CNVM
     * *xbrl\_download\_dir*: Configuración ubicación donde se ha de realizar la descarga de los ficheros zip que contienen los ficheros XBRL para una página de resultados.
@@ -110,6 +113,12 @@ Y de la siguiente forma:
 python main.py --mode xbrlExtract
 ```
 Para llevar a cabo únicamente la ejecución del proceso de extracción de propiedades xbrl.
+
+Adicionalmente, podrá usarse el parámetro **evalrobot** con valor *True* o *False* para indicar si se desea comprobar que el web scraping requerido está permimtido según el fichero *robots.txt* del site, si se establece valor *True* y se encuentra que el scraping para *http://www.cnmv.es/ipps* no está permitido, se parará la ejecución del programa.
+```
+python main.py --mode total --evalrobot True
+```
+
 Esto será útil cuando se haya realizado previamente una descarga y lo único que se desee es extraer nuevas propiedades xbrl sobre los datos ya descargados.
 
 ## Referencias

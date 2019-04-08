@@ -38,6 +38,16 @@ class WebScraper():
                         Configurarion para el driver firefox, indica la ruta al ejecutable de Firefox
                     - selenium_firefox_driver
                         Configurarion para el driver firefox, indica la ruta al driver de Selenium para Firefox
+                    - selenium_user_agent_comment
+                        Configuracón de comentario a incluir al final del user agent establecedio por el cliente web Firefox.
+                        El objetivo de este parámetro es meramente informativo, tratamos de añadir algún dato que permita
+                        identificar a nuestro web scraping, para facilitar las tareas de control del site para el cual
+                        se está realizando el web scraping.
+                        (*Nota*: Si estuieramos usando directamente algúna librería de phyton como *urllib2*, esta
+                         librería incluiría un User agent por defencto como "Python-urllib/3.0", existen sites
+                         donde bloquean a los robots que usan UserAgent por defecto, en estos casos es de especial
+                         relevancia incluir un valor específico en este parámetro.)
+                        
                 * Configuración persistencia descarga de ficheros IPP xbrl
                     - xbrl_ipp_url
                         Url donde se encuentran los informes ipp xbrl publicados por la CNVM
@@ -64,6 +74,7 @@ class WebScraper():
             # Configuración web driver
             self.selenium_firefox_path = wsPreferences['selenium_firefox_path']
             self.selenium_firefox_driver = wsPreferences['selenium_firefox_driver']
+            self.selenium_user_agent_comment = wsPreferences['selenium_user_agent_comment']
             # Configuración del origen de datos
             self.xbrl_ipp_url = wsPreferences['xbrl_ipp_url']
             # Configuración persistencia descarga de ficheros IPP xbrl
@@ -133,12 +144,16 @@ class WebScraper():
             profile.set_preference("browser.download.dir", self.xbrl_download_dir)
             # - Especificar a Firefox que descarge automátiamente las ficheros de mime-types especificados
             profile.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/zip");
+            # - Especificar User Agent
+            user_agent = self.__get_default_user_agent()+' - '+self.selenium_user_agent_comment
+            profile.set_preference("general.useragent.override", user_agent)
+
             # -Configuración parámetro binary
             binary = FirefoxBinary(self.selenium_firefox_path)
-
             # Instanciar driver par Firefox
             self.driver = webdriver.Firefox(firefox_profile=profile, firefox_binary=binary, executable_path=self.selenium_firefox_driver)
-            print('  * Web driver inicializado')
+            agent = self.driver.execute_script("return navigator.userAgent")
+            print('  * Web driver inicializado con userAgent: '+agent)
         except Exception:
             traceback.print_exc()            
             raise Exception('Error en WebScraper.__init_webdriver.')  
@@ -399,3 +414,18 @@ class WebScraper():
         """ Retorna el path del fichero con el zip de los Informes descargados"""
         path_to_zip_file = self.xbrl_download_dir + '\Informes.zip'
         return path_to_zip_file
+    
+    
+    def __get_default_user_agent(self):
+        """ Función que retorna un string con el valor por defecto para el usert agent """
+        try:
+            # -Configuración parámetro binary
+            binary = FirefoxBinary(self.selenium_firefox_path)
+            #recuperar user agent por defencto
+            self.driver = webdriver.Firefox(firefox_binary=binary, executable_path=self.selenium_firefox_driver)
+            agent = self.driver.execute_script("return navigator.userAgent")
+            self.driver.close()
+            return agent
+        except Exception:
+            traceback.print_exc()            
+            raise Exception('Error WebScrapper.__get_default_user_agent.')  
